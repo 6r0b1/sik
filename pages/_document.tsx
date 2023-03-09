@@ -5,8 +5,8 @@ export default function Document() {
         <Html lang="en">
             <Head>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&family=Oswald:wght@500;700&display=swap"
                     rel="stylesheet"
+                    href="https://use.typekit.net/odq3isg.css"
                 />
             </Head>
             <body>
