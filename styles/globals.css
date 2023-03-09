@@ -30,7 +30,7 @@ footer {
 
 h1 {
     cursor: default;
-    font-family: "Fira Sans", sans-serif;
+    font-family: fira-sans, sans-serif;
     font-weight: 900;
     font-size: 26vw;
     line-height: 22vw;
