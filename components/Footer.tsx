@@ -11,12 +11,7 @@ function Footer() {
                     <p className="footer_p">imprint</p>
                     <p className="footer_p">acessibility</p>
                 </div>
-                <img
-                    className="footer_image"
-                    src="/assets/pride.png"
-                    alt=""
-                    srcset=""
-                />
+                <img className="footer_image" src="/assets/pride.png" alt="" />
             </div>
         </footer>
     );

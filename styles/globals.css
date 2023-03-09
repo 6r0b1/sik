@@ -30,7 +30,7 @@ footer {
 
 h1 {
     font-family: "Fira Sans", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     font-size: 26vw;
     line-height: 22vw;
     color: #160c00;
@@ -47,6 +47,69 @@ p {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
+}
+
+.menu_button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #160c00;
+}
+
+.inner_circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #fff 6px solid;
+}
+
+.inner_circle:hover {
+    border: #f0cde4 6px solid;
+}
+
+.menu_closed {
+    position: fixed;
+    top: 0;
+    left: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 38%;
+    max-width: 790px;
+    height: 0;
+    background-color: #160c00;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.menu_open {
+    position: fixed;
+    top: 0;
+    left: 47%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 38%;
+    max-width: 790px;
+    height: 70vh;
+    padding: 50px;
+    background-color: #160c00;
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.3s ease-in-out;
+}
+
+.main_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .footer_content {
