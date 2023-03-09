@@ -29,11 +29,30 @@ footer {
 }
 
 h1 {
+    cursor: default;
     font-family: "Fira Sans", sans-serif;
     font-weight: 900;
     font-size: 26vw;
     line-height: 22vw;
     color: #160c00;
+}
+
+a {
+    cursor: pointer;
+    padding: 30px 5px 0 5px;
+    width: 350px;
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #160c00;
+    background-color: #fff;
+    transition: 90ms;
+}
+
+a:hover {
+    background-color: #f0cde4;
+    transition: 90ms;
 }
 
 p {
@@ -50,7 +69,6 @@ p {
 }
 
 .menu_button {
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,16 +94,16 @@ p {
     top: 0;
     left: 47%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 38%;
     max-width: 790px;
     height: 0;
+    padding: 15px;
     background-color: #160c00;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .menu_open {
@@ -94,15 +112,15 @@ p {
     left: 47%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     width: 38%;
     max-width: 790px;
     height: 70vh;
-    padding: 50px;
+    padding: 0 50px 300px 50px;
     background-color: #160c00;
     opacity: 1;
     pointer-events: all;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .main_nav {
@@ -110,6 +128,7 @@ p {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    row-gap: 40px;
 }
 
 .footer_content {

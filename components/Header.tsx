@@ -21,14 +21,21 @@ function Header() {
                 <p>home</p>
             </div>
             <div
-                className={"menu" + menuState}
-                // onMouseLeave={closeMenu}
+                className={"menu" + menuState} // </header>onMouseLeave={closeMenu}
             >
                 <div className="main_nav">
-                    <Link href="/">home</Link>
-                    <Link href="/works">works</Link>
-                    <Link href="/about">about</Link>
-                    <Link href="/contact">contact</Link>
+                    <Link href="/" onClick={closeMenu}>
+                        home
+                    </Link>
+                    <Link href="/works" onClick={closeMenu}>
+                        works
+                    </Link>
+                    <Link href="/about" onClick={closeMenu}>
+                        about
+                    </Link>
+                    <Link href="/contact" onClick={closeMenu}>
+                        contact
+                    </Link>
                 </div>
             </div>
         </header>
