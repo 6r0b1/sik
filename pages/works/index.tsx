@@ -5,22 +5,21 @@ import Image from "next/image";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
+import { IWork } from "@/types/interfaces";
+
 export default function Works() {
-    interface work {
-        id: number;
-        title: string;
-        description: string;
-    }
-    const works: work[] = [
+    const works: IWork[] = [
         {
             id: 1,
-            title: "Title of work one",
-            description: "And a short descriprion for this work",
+            title: "kaleiDANCEscope (Edition asphalt Festival)",
+            description:
+                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
         },
         {
             id: 2,
-            title: "Title of work two",
-            description: "And a short descriprion for this work",
+            title: "Other Performance Title",
+            description:
+                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.Mus sam quatibus. Bo. Epeditio. Cusdam et estibus, quos explign atquasp erferita quae eatia comnit expe con preius rerovit!",
         },
     ];
     return (
@@ -42,8 +41,13 @@ export default function Works() {
 
                 <div className="works_list">
                     {works.map((work) => (
-                        <div key={work.id}>
-                            <Link href={`/works/${work.id}`}>{work.title}</Link>
+                        <div className="work_entry" key={work.id}>
+                            <Link
+                                className="work_link"
+                                href={`/works/${work.id}`}
+                            >
+                                {work.title}
+                            </Link>
                             <p>{work.description}</p>
                         </div>
                     ))}

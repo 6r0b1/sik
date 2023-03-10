@@ -4,7 +4,7 @@
     --accent-01: #f0cde4;
     /* transitions */
     --menu-transition: all 0.4s ease-in-out;
-    --link-transition: 90ms;
+    --link-transition: 190ms;
 }
 
 * {
@@ -15,6 +15,13 @@
 
 body {
     font-family: "Oswald", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 header {
@@ -105,6 +112,25 @@ p {
     margin-top: 0;
     transition: var(--link-transition);
 }
+
+.work_link {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 8px;
+    text-decoration-color: var(--accent-01);
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--warm-black);
+    transition: var(--link-transition);
+}
+
+.work_link:hover {
+    text-decoration-color: var(--warm-black);
+    transition: var(--link-transition);
+}
+
 /* navigation and menu */
 
 .nav_bar {
@@ -261,5 +287,18 @@ p {
 }
 
 .works_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+    width: 1200px;
     min-height: 100vh;
+    padding-top: 300px;
+    padding-left: 3px;
+}
+
+.work_entry {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 500px;
 }
