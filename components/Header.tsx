@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import SocialMedia from "./SocialMedia";
 
-function Header() {
+function Header({ location }) {
     const [menuState, setMenuState] = useState("_closed");
     function openMenu() {
         setMenuState("_open");
@@ -16,17 +16,18 @@ function Header() {
     return (
         <header>
             <div className="nav_bar">
-                <p>s-I-k</p>
+                <p className="logo">should-I-know</p>
                 <div className="menu_button" onMouseEnter={openMenu}>
                     <div className="inner_circle"></div>
                 </div>
-                <p>home</p>
+                <p className="breadcrumb">{location}</p>
             </div>
             <div className={"menu" + menuState} onMouseLeave={closeMenu}>
                 <div className="nav_wrapper">
                     <div className="main_nav">
                         <Link
                             className="main_nav_link"
+                            id="home"
                             href="/"
                             onClick={closeMenu}
                         >
@@ -34,6 +35,7 @@ function Header() {
                         </Link>
                         <Link
                             className="main_nav_link"
+                            id="works"
                             href="/works"
                             onClick={closeMenu}
                         >
@@ -41,6 +43,7 @@ function Header() {
                         </Link>
                         <Link
                             className="main_nav_link"
+                            id="about"
                             href="/about"
                             onClick={closeMenu}
                         >
@@ -48,6 +51,7 @@ function Header() {
                         </Link>
                         <Link
                             className="main_nav_link"
+                            id="contact"
                             href="/contact"
                             onClick={closeMenu}
                         >
@@ -58,6 +62,7 @@ function Header() {
                         <div>
                             <Link
                                 className="additional_nav_link"
+                                id="english-language"
                                 href="/einfache-sprache"
                             >
                                 en
@@ -65,6 +70,7 @@ function Header() {
                             |{" "}
                             <Link
                                 className="additional_nav_link"
+                                id="deutsche-sprache"
                                 href="/einfache-sprache"
                             >
                                 deu
@@ -72,6 +78,7 @@ function Header() {
                             |{" "}
                             <Link
                                 className="additional_nav_link"
+                                id="einfache-sprache"
                                 href="/einfache-sprache"
                             >
                                 einfach

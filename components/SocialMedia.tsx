@@ -10,6 +10,7 @@ function SocialMedia() {
                         "https://www.youtube.com/channel/UCLA8nDtc9KlzVYiDrehRfqQ"
                     }
                     target="_blank"
+                    id="youtube"
                 >
                     <img
                         className="social_links"
@@ -20,6 +21,7 @@ function SocialMedia() {
                 <Link
                     href={"https://www.facebook.com/MuseumVillaRot"}
                     target="_blank"
+                    id="facebook"
                 >
                     <img
                         className="social_links"
@@ -30,6 +32,7 @@ function SocialMedia() {
                 <Link
                     href={"https://www.instagram.com/museumvillarot"}
                     target="_blank"
+                    id="instagram"
                 >
                     <img
                         className="social_links"

@@ -21,7 +21,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <main>
-                <Header />
+                <Header location="home" />
                 <img
                     className="hero_background"
                     src="/statics/hero.jpg"
