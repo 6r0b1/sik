@@ -22,10 +22,7 @@ function Header() {
                 </div>
                 <p>home</p>
             </div>
-            <div
-                className={"menu" + menuState}
-                // onMouseLeave={closeMenu}
-            >
+            <div className={"menu" + menuState} onMouseLeave={closeMenu}>
                 <div className="nav_wrapper">
                     <div className="main_nav">
                         <Link
@@ -71,6 +68,13 @@ function Header() {
                                 href="/einfache-sprache"
                             >
                                 deu
+                            </Link>{" "}
+                            |{" "}
+                            <Link
+                                className="additional_nav_link"
+                                href="/einfache-sprache"
+                            >
+                                einfach
                             </Link>
                         </div>
                         <SocialMedia />

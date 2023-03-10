@@ -93,8 +93,15 @@ p {
 }
 
 .social_links {
+    margin-top: 3px;
     width: 22px;
     aspect-ratio: 1/1;
+    transition: var(--link-transition);
+}
+
+.social_links:hover {
+    margin-top: 0;
+    transition: var(--link-transition);
 }
 
 .nav_bar {
@@ -152,6 +159,7 @@ p {
     width: 60%;
     max-width: 700px;
     height: 80vh;
+    min-height: 750px;
     max-height: 900px;
     padding: 90px 50px 0 50px;
     background-color: var(--warm-black);
@@ -177,9 +185,10 @@ p {
 .additional_nav {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
     align-self: flex-end;
+    height: 460px;
     row-gap: 15px;
     padding-bottom: 5px;
     color: #fff;
