@@ -28,8 +28,25 @@ export default function Works() {
                         '"Die Tanzwunschmaschine ist eine begehbare Schatzkiste. Darin funkelt es ganz wunderbar. Wer sie wieder verlässt, lächelt ein vergnügliches Ich-weiß-da-was-Lächeln, das man sofort stibitzen möchte. Es ist eben schon ein bisschen magisch, was sich da als Premiere in dem lavendelblauen Wohnwagen auf dem Gertrudismarkt in Eller abspielt."',
                 },
             ],
-            dates: [{ date: "22.05.2023", venue: "Gertrudisplatz, Eller" }],
+            dates: [
+                {
+                    date: "22.05.2023",
+                    time: "12:00",
+                    venue: "Gertrudisplatz, Eller",
+                },
+            ],
             main_img_src: "/works/images/kaleidanceskope_08_web_kuekelhahn.jpg",
+            images: [
+                { src: "/works/images/kds-1.jpg", alt: "image one" },
+                { src: "/works/images/kds-2.jpg", alt: "image two" },
+                { src: "/works/images/kds-3.jpg", alt: "image three" },
+                { src: "/works/images/kds-1.jpg", alt: "image one" },
+                { src: "/works/images/kds-2.jpg", alt: "image two" },
+                { src: "/works/images/kds-3.jpg", alt: "image three" },
+                { src: "/works/images/kds-1.jpg", alt: "image one" },
+                { src: "/works/images/kds-2.jpg", alt: "image two" },
+                { src: "/works/images/kds-3.jpg", alt: "image three" },
+            ],
         },
     ];
     return (
@@ -51,7 +68,7 @@ export default function Works() {
                 <div className="spacer_100"></div>
                 <Image
                     src={`${works[0].main_img_src}`}
-                    alt={works[0].title}
+                    alt=""
                     width={1400}
                     height={820}
                     style={{
@@ -86,13 +103,29 @@ export default function Works() {
                             <h2>Dates</h2>
                             {works[0].dates.map((date, index) => (
                                 <p key={index}>
-                                    {date.date}
+                                    {date.date} | {date.time} Uhr
                                     <br />
                                     {date.venue}
                                 </p>
                             ))}
                         </div>
                     )}
+                </div>
+                <div className="spacer_100"></div>
+                <div className="image_grid">
+                    {works[0].images &&
+                        works[0].images.map((image, index) => (
+                            <Image
+                                key={index}
+                                src={image.src}
+                                alt={image.alt}
+                                width={450}
+                                height={320}
+                                style={{
+                                    objectFit: "cover",
+                                }}
+                            />
+                        ))}
                 </div>
                 <div className="spacer_100"></div>
             </main>

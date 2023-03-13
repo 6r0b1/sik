@@ -351,6 +351,14 @@ p {
     width: 350px;
 }
 
+.image_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    width: 1400px;
+}
+
 /* spacers, dummies */
 
 .spacer_100 {
