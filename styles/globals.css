@@ -31,7 +31,7 @@ header {
     z-index: 3;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     padding: 20px;
 }
 
@@ -55,6 +55,17 @@ h1 {
     /* color: var(--warm-black); */
 }
 
+h2 {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 8px;
+    text-decoration-color: var(--accent-01);
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--warm-black);
+}
+
 a:hover {
     color: var(--warm-black);
 }
@@ -69,10 +80,10 @@ p {
 
 .main_nav_link {
     cursor: pointer;
-    padding: 20px 5px 0 5px;
+    padding: 15px 5px 0 5px;
     width: 300px;
-    font-size: 75px;
-    line-height: 80px;
+    font-size: 70px;
+    line-height: 85px;
     font-weight: 800;
     text-decoration: none;
     color: var(--warm-black);
@@ -255,15 +266,16 @@ p {
 .logo {
     font-size: 24px;
     font-weight: 700;
-    width: 150px;
+    width: 200px;
     padding-top: 5px;
 }
 
 .breadcrumb {
+    display: inline;
     font-size: 24px;
     font-weight: 700;
-    text-align: right;
-    width: 150px;
+    text-align: end;
+    width: 200px;
     padding-top: 5px;
 }
 
@@ -298,7 +310,6 @@ p {
     width: 1200px;
     min-height: 100vh;
     padding-top: 300px;
-    padding-left: 3px;
 }
 
 .work_entry {
@@ -306,4 +317,24 @@ p {
     flex-direction: column;
     row-gap: 25px;
     width: 500px;
+}
+
+.works_main {
+    display: flex;
+    column-gap: 25px;
+    width: 1200px;
+}
+
+.work_details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 700px;
+}
+
+/* spacers, dummies */
+
+.spacer_100 {
+    height: 100px;
+    /* width: 100vw; */
 }
