@@ -55,6 +55,10 @@ h1 {
     /* color: var(--warm-black); */
 }
 
+a:hover {
+    color: var(--warm-black);
+}
+
 p {
     font-size: 18px;
     font-weight: 500;
