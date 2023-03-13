@@ -16,6 +16,19 @@ export default function Works() {
                 "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
             description_long:
                 "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
+            links: [
+                {
+                    link: "https://www.pinkblau.de",
+                    link_text:
+                        "Tümay Kılınçel & Cornelius Schaper im Interview – „Tänze zum Preis einer Tasse Kaffee“ (Alexandra Wehrmann, theycallitkleinparis, 05.07.2022) ",
+                },
+                {
+                    link: "https://www.pinkblau.de",
+                    link_text:
+                        '"Die Tanzwunschmaschine ist eine begehbare Schatzkiste. Darin funkelt es ganz wunderbar. Wer sie wieder verlässt, lächelt ein vergnügliches Ich-weiß-da-was-Lächeln, das man sofort stibitzen möchte. Es ist eben schon ein bisschen magisch, was sich da als Premiere in dem lavendelblauen Wohnwagen auf dem Gertrudismarkt in Eller abspielt."',
+                },
+            ],
+            dates: [{ date: "22.05.2023", venue: "Gertrudisplatz, Eller" }],
             main_img_src: "/works/images/kaleidanceskope_08_web_kuekelhahn.jpg",
         },
     ];
@@ -33,8 +46,8 @@ export default function Works() {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
+            <Header location="works | details" />
             <main>
-                <Header location="works | details" />
                 <div className="spacer_100"></div>
                 <Image
                     src={`${works[0].main_img_src}`}
@@ -50,11 +63,40 @@ export default function Works() {
                     <div className="work_details">
                         <h2>{works[0].title}</h2>
                         <p>{works[0].description_long}</p>
+                        {works[0].links && (
+                            <div className="work_details">
+                                <h2>Links, Berichte und Erwähnungen</h2>
+                                {works[0].links.map((link, index) => (
+                                    <p key={index}>
+                                        {link.link_text}{" "}
+                                        <a
+                                            href={link.link}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            {"-> zum Artitel"}
+                                        </a>
+                                    </p>
+                                ))}
+                            </div>
+                        )}
                     </div>
-                    <div className="dates"></div>
+                    {works[0].dates && (
+                        <div className="work_dates">
+                            <h2>Dates</h2>
+                            {works[0].dates.map((date, index) => (
+                                <p key={index}>
+                                    {date.date}
+                                    <br />
+                                    {date.venue}
+                                </p>
+                            ))}
+                        </div>
+                    )}
                 </div>
-                <Footer />
+                <div className="spacer_100"></div>
             </main>
+            <Footer />
         </>
     );
 }

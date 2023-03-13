@@ -3,9 +3,24 @@ export interface IWork {
     title: string;
     description: string;
     description_long?: string;
-    dates?: [{ date: string; venue: string }];
+    links?: ILinks[];
+    dates?: IDates[];
     main_img_src?: string;
     img_src?: [string];
-    credits_role?: [string];
-    credits_name?: [string];
+    credits?: ICredits[];
+}
+
+export interface ILinks {
+    link: string;
+    link_text: string;
+}
+
+export interface IDates {
+    date: string;
+    venue: string;
+}
+
+export interface ICredits {
+    role: string;
+    name: string;
 }

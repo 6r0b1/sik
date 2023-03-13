@@ -66,8 +66,19 @@ h2 {
     color: var(--warm-black);
 }
 
+a {
+    text-decoration: underline;
+
+    text-decoration-thickness: 4px;
+    text-decoration-color: var(--accent-01);
+    color: var(--warm-black);
+    transition: var(--link-transition);
+}
+
 a:hover {
     color: var(--warm-black);
+    text-decoration-color: var(--warm-black);
+    transition: var(--link-transition);
 }
 
 p {
@@ -321,6 +332,7 @@ p {
 
 .works_main {
     display: flex;
+    justify-content: space-between;
     column-gap: 25px;
     width: 1200px;
 }
@@ -330,6 +342,13 @@ p {
     flex-direction: column;
     row-gap: 25px;
     width: 700px;
+}
+
+.work_dates {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 350px;
 }
 
 /* spacers, dummies */

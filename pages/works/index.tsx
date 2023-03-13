@@ -36,9 +36,8 @@ export default function Works() {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
+            <Header location="works" />
             <main>
-                <Header location="works" />
-
                 <div className="works_list">
                     {works.map((work) => (
                         <div className="work_entry" key={work.id}>
@@ -52,8 +51,8 @@ export default function Works() {
                         </div>
                     ))}
                 </div>
-                <Footer />
             </main>
+            <Footer />
         </>
     );
 }
