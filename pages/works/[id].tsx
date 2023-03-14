@@ -159,12 +159,12 @@ export default function Works() {
                     {modalState === "_shown" && (
                         <div className="lightbox_slider">
                             <Image
+                                className="close_button"
                                 onClick={closeModal}
                                 alt="close button"
                                 src="/controls/close.svg"
                                 width={35}
                                 height={35}
-                                style={{ marginRight: "20px" }}
                             />
                             <LightBox
                                 images={works[0].images}

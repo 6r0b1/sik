@@ -22,11 +22,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 header {
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 3;
@@ -36,7 +37,7 @@ footer {
     display: flex;
     justify-content: center;
     z-index: 300;
-    width: 100vw;
+    width: 100%;
     padding: 30px;
     background-color: var(--warm-black);
 }
@@ -164,7 +165,7 @@ p {
 .nav_wrapper_transparent {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
     transition: var(--link-transition);
 }
@@ -172,7 +173,7 @@ p {
 .nav_wrapper_solid {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     padding: 20px;
     background-color: #fff;
     transition: var(--link-transition);
@@ -393,6 +394,7 @@ p {
     background-color: var(--accent-01);
     opacity: 0;
     transition: var(--link-transition);
+    cursor: pointer;
 }
 
 .grid_shader:hover {
@@ -444,7 +446,7 @@ p {
     align-items: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--modal-bg);
     z-index: 100;
@@ -461,7 +463,7 @@ p {
     align-items: center;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--modal-bg);
     z-index: 100;
@@ -470,7 +472,12 @@ p {
     transition: var(--menu-transition);
 }
 
+.close_button {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 .spacer_100 {
     height: 100px;
-    /* width: 100vw; */
+    /* width: 100%; */
 }
