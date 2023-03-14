@@ -131,9 +131,7 @@ p {
 }
 
 .social_links {
-    margin-top: 3px;
-    width: 22px;
-    aspect-ratio: 1/1;
+    margin-top: 5px;
     transition: var(--link-transition);
 }
 
