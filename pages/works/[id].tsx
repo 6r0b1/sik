@@ -65,10 +65,8 @@ export default function Works() {
         },
     ];
     function openModal(index) {
-        console.log("index", index);
-
-        setModalState("_shown");
         setSelectedImage(index);
+        setModalState("_shown");
     }
     function closeModal() {
         setModalState("_hidden");
@@ -158,11 +156,24 @@ export default function Works() {
                         ))}
                 </div>
                 <div className={`modal_bg${modalState}`}>
-                    <LightBox
-                        images={works[0].images}
-                        selectedIndex={selectedImage}
-                    />
+                    {modalState === "_shown" && (
+                        <div className="lightbox_slider">
+                            <Image
+                                onClick={closeModal}
+                                alt="close button"
+                                src="/controls/close.svg"
+                                width={35}
+                                height={35}
+                                style={{ marginRight: "20px" }}
+                            />
+                            <LightBox
+                                images={works[0].images}
+                                selectedIndex={selectedImage}
+                            />
+                        </div>
+                    )}
                 </div>
+
                 <div className="spacer_100"></div>
                 {works[0].credits && (
                     <div className="credits">

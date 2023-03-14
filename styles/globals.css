@@ -2,7 +2,7 @@
     /* colors */
     --warm-black: #160c00;
     --accent-01: #f0cde4;
-    --modal-bg: rgba(255, 255, 255, 0.8);
+    --modal-bg: rgba(255, 255, 255, 0.9);
     /* transitions */
     --menu-transition: all 0.4s ease-in-out;
     --link-transition: 190ms;
@@ -422,8 +422,9 @@ p {
 .lightbox_slider {
     display: flex;
     flex-direction: column;
+    row-gap: 50px;
+    align-items: flex-end;
     width: 1400px;
-    height: 820px;
 }
 
 .carousel-control-next {
