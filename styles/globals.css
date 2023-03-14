@@ -29,10 +29,6 @@ header {
     top: 0;
     left: 0;
     z-index: 3;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    padding: 20px;
 }
 
 footer {
@@ -88,6 +84,10 @@ p {
 }
 
 /* links */
+
+.logo_link {
+    text-decoration: none;
+}
 
 .main_nav_link {
     cursor: pointer;
@@ -158,6 +158,23 @@ p {
 }
 
 /* navigation and menu */
+
+.menu_wrapper_transparent {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 20px;
+    transition: var(--link-transition);
+}
+
+.menu_wrapper_solid {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding: 20px;
+    background-color: #fff;
+    transition: var(--link-transition);
+}
 
 .nav_bar {
     position: relative;

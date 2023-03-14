@@ -1,12 +1,26 @@
 import Link from "next/link";
 
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import SocialMedia from "./SocialMedia";
 
 function Header({ location }) {
     const [menuState, setMenuState] = useState("_closed");
+    const [menuBackground, setMenuBackground] = useState("_transparent");
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+    function handleScroll() {
+        if (window.scrollY > 50) {
+            setMenuBackground("_solid");
+        } else {
+            setMenuBackground("_transparent");
+        }
+    }
     function openMenu() {
         setMenuState("_open");
     }
@@ -15,76 +29,82 @@ function Header({ location }) {
     }
     return (
         <header>
-            <div className="nav_bar">
-                <p className="logo">should-I-know</p>
-                <div className="menu_button" onMouseEnter={openMenu}>
-                    <div className="inner_circle"></div>
-                </div>
-                <p className="breadcrumb">{location}</p>
-            </div>
-            <div className={"menu" + menuState} onMouseLeave={closeMenu}>
-                <div className="nav_wrapper">
-                    <div className="main_nav">
-                        <Link
-                            className="main_nav_link"
-                            id="home"
-                            href="/"
-                            onClick={closeMenu}
-                        >
-                            home
+            <div className={`menu_wrapper${menuBackground}`}>
+                <div className="nav_bar">
+                    <p className="logo">
+                        <Link className="logo_link" id="home" href="/">
+                            should-I-know
                         </Link>
-                        <Link
-                            className="main_nav_link"
-                            id="works"
-                            href="/works"
-                            onClick={closeMenu}
-                        >
-                            works
-                        </Link>
-                        <Link
-                            className="main_nav_link"
-                            id="about"
-                            href="/about"
-                            onClick={closeMenu}
-                        >
-                            about
-                        </Link>
-                        <Link
-                            className="main_nav_link"
-                            id="contact"
-                            href="/contact"
-                            onClick={closeMenu}
-                        >
-                            contact
-                        </Link>
+                    </p>
+                    <div className="menu_button" onMouseEnter={openMenu}>
+                        <div className="inner_circle"></div>
                     </div>
-                    <div className="additional_nav">
-                        <div>
+                    <p className="breadcrumb">{location}</p>
+                </div>
+                <div className={"menu" + menuState} onMouseLeave={closeMenu}>
+                    <div className="nav_wrapper">
+                        <div className="main_nav">
                             <Link
-                                className="additional_nav_link"
-                                id="english-language"
-                                href="/einfache-sprache"
+                                className="main_nav_link"
+                                id="home"
+                                href="/"
+                                onClick={closeMenu}
                             >
-                                en
-                            </Link>{" "}
-                            |{" "}
+                                home
+                            </Link>
                             <Link
-                                className="additional_nav_link"
-                                id="deutsche-sprache"
-                                href="/einfache-sprache"
+                                className="main_nav_link"
+                                id="works"
+                                href="/works"
+                                onClick={closeMenu}
                             >
-                                deu
-                            </Link>{" "}
-                            |{" "}
+                                works
+                            </Link>
                             <Link
-                                className="additional_nav_link"
-                                id="einfache-sprache"
-                                href="/einfache-sprache"
+                                className="main_nav_link"
+                                id="about"
+                                href="/about"
+                                onClick={closeMenu}
                             >
-                                einfach
+                                about
+                            </Link>
+                            <Link
+                                className="main_nav_link"
+                                id="contact"
+                                href="/contact"
+                                onClick={closeMenu}
+                            >
+                                contact
                             </Link>
                         </div>
-                        <SocialMedia />
+                        <div className="additional_nav">
+                            <div>
+                                <Link
+                                    className="additional_nav_link"
+                                    id="english-language"
+                                    href="/einfache-sprache"
+                                >
+                                    en
+                                </Link>{" "}
+                                |{" "}
+                                <Link
+                                    className="additional_nav_link"
+                                    id="deutsche-sprache"
+                                    href="/einfache-sprache"
+                                >
+                                    deu
+                                </Link>{" "}
+                                |{" "}
+                                <Link
+                                    className="additional_nav_link"
+                                    id="einfache-sprache"
+                                    href="/einfache-sprache"
+                                >
+                                    einfach
+                                </Link>
+                            </div>
+                            <SocialMedia />
+                        </div>
                     </div>
                 </div>
             </div>

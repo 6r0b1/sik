@@ -21,12 +21,12 @@ export interface IDates {
     venue: string;
 }
 
-export interface ICredits {
-    role: string;
-    name: string;
-}
-
 export interface IImages {
     src: string;
     alt: string;
+}
+
+export interface ICredits {
+    role: string;
+    name: string;
 }
