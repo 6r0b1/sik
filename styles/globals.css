@@ -159,7 +159,7 @@ p {
 
 /* navigation and menu */
 
-.menu_wrapper_transparent {
+.nav_wrapper_transparent {
     display: flex;
     justify-content: center;
     width: 100vw;
@@ -167,7 +167,7 @@ p {
     transition: var(--link-transition);
 }
 
-.menu_wrapper_solid {
+.nav_wrapper_solid {
     display: flex;
     justify-content: center;
     width: 100vw;

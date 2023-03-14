@@ -7,7 +7,7 @@ import SocialMedia from "./SocialMedia";
 
 function Header({ location }) {
     const [menuState, setMenuState] = useState("_closed");
-    const [menuBackground, setMenuBackground] = useState("_transparent");
+    const [navBackground, setNavBackground] = useState("_transparent");
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -15,10 +15,10 @@ function Header({ location }) {
         };
     }, []);
     function handleScroll() {
-        if (window.scrollY > 50) {
-            setMenuBackground("_solid");
+        if (window.scrollY > 0) {
+            setNavBackground("_solid");
         } else {
-            setMenuBackground("_transparent");
+            setNavBackground("_transparent");
         }
     }
     function openMenu() {
@@ -29,7 +29,7 @@ function Header({ location }) {
     }
     return (
         <header>
-            <div className={`menu_wrapper${menuBackground}`}>
+            <div className={`nav_wrapper${navBackground}`}>
                 <div className="nav_bar">
                     <p className="logo">
                         <Link className="logo_link" id="home" href="/">
