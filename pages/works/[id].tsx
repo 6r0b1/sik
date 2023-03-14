@@ -2,12 +2,17 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useState } from "react";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import LightBox from "../../components/LightBox";
 
 import { IWork } from "@/types/interfaces";
 
 export default function Works() {
+    const [modalState, setModalState] = useState("_hidden");
+    const [selectedImage, setSelectedImage] = useState(0);
     const works: IWork[] = [
         {
             id: 1,
@@ -59,6 +64,15 @@ export default function Works() {
             ],
         },
     ];
+    function openModal(index) {
+        console.log("index", index);
+
+        setModalState("_shown");
+        setSelectedImage(index);
+    }
+    function closeModal() {
+        setModalState("_hidden");
+    }
     return (
         <>
             <Head>
@@ -125,17 +139,29 @@ export default function Works() {
                 <div className="image_grid">
                     {works[0].images &&
                         works[0].images.map((image, index) => (
-                            <Image
-                                key={index}
-                                src={image.src}
-                                alt={image.alt}
-                                width={450}
-                                height={320}
-                                style={{
-                                    objectFit: "cover",
-                                }}
-                            />
+                            <div className="grid_item" key={index}>
+                                <div
+                                    className="grid_shader"
+                                    onClick={() => openModal(index)}
+                                ></div>
+                                <Image
+                                    className="grid_image"
+                                    src={image.src}
+                                    alt={image.alt}
+                                    width={450}
+                                    height={320}
+                                    style={{
+                                        objectFit: "cover",
+                                    }}
+                                />
+                            </div>
                         ))}
+                </div>
+                <div className={`modal_bg${modalState}`}>
+                    <LightBox
+                        images={works[0].images}
+                        selectedIndex={selectedImage}
+                    />
                 </div>
                 <div className="spacer_100"></div>
                 {works[0].credits && (

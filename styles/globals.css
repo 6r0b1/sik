@@ -2,6 +2,7 @@
     /* colors */
     --warm-black: #160c00;
     --accent-01: #f0cde4;
+    --modal-bg: rgba(255, 255, 255, 0.8);
     /* transitions */
     --menu-transition: all 0.4s ease-in-out;
     --link-transition: 190ms;
@@ -21,7 +22,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
 }
 
 header {
@@ -35,7 +36,7 @@ footer {
     display: flex;
     justify-content: center;
     z-index: 300;
-    width: 100%;
+    width: 100vw;
     padding: 30px;
     background-color: var(--warm-black);
 }
@@ -78,6 +79,7 @@ a:hover {
 }
 
 p {
+    margin: 0;
     font-size: 18px;
     font-weight: 500;
     color: var(--warm-black);
@@ -376,6 +378,27 @@ p {
     width: 1400px;
 }
 
+.grid_item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.grid_shader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-01);
+    opacity: 0;
+    transition: var(--link-transition);
+}
+
+.grid_shader:hover {
+    opacity: 0.5;
+}
+
 .credits {
     display: flex;
     flex-direction: column;
@@ -396,7 +419,55 @@ p {
     width: 100%;
 }
 
+.lightbox_slider {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    height: 820px;
+}
+
+.carousel-control-next {
+    width: 50px;
+}
+
+.carousel-control-prev {
+    width: 50px;
+}
+
 /* spacers, dummies */
+
+.modal_bg_hidden {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--modal-bg);
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--menu-transition);
+}
+
+.modal_bg_shown {
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--modal-bg);
+    z-index: 100;
+    opacity: 1;
+    pointer-events: all;
+    transition: var(--menu-transition);
+}
 
 .spacer_100 {
     height: 100px;
