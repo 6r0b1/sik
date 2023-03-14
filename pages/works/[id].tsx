@@ -47,6 +47,16 @@ export default function Works() {
                 { src: "/works/images/kds-2.jpg", alt: "image two" },
                 { src: "/works/images/kds-3.jpg", alt: "image three" },
             ],
+            credits: [
+                {
+                    role: "Künstlerische Leitung, Choreografie, Performance",
+                    name: "Tümay Kılınçel",
+                },
+                {
+                    role: "Künstlerische Leitung, Video: ",
+                    name: "Cornelius Schaper",
+                },
+            ],
         },
     ];
     return (
@@ -127,6 +137,20 @@ export default function Works() {
                             />
                         ))}
                 </div>
+                <div className="spacer_100"></div>
+                {works[0].credits && (
+                    <div className="credits">
+                        <h2>Credits</h2>
+                        <div className="credits_list">
+                            {works[0].credits.map((credit, index) => (
+                                <div key={index} className="credits_list_item">
+                                    <p>{credit.role}</p>
+                                    <p>{credit.name}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
                 <div className="spacer_100"></div>
             </main>
             <Footer />

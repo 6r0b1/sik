@@ -376,6 +376,26 @@ p {
     width: 1400px;
 }
 
+.credits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 1200px;
+}
+
+.credits_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.credits_list_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 /* spacers, dummies */
 
 .spacer_100 {
