@@ -13,13 +13,16 @@ function LightBox({ images, selectedIndex }) {
             >
                 {images.map((image, index) => (
                     <Carousel.Item key={index}>
-                        <Image
-                            alt={image.alt}
-                            src={image.src}
-                            width={1400}
-                            height={820}
-                            style={{ objectFit: "contain" }}
-                        />
+                        <div className="slider_image_wrapper">
+                            <Image
+                                alt={image.alt}
+                                src={image.src}
+                                fill
+                                style={{
+                                    objectFit: "contain",
+                                }}
+                            />
+                        </div>
                     </Carousel.Item>
                 ))}
             </Carousel>

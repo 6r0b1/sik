@@ -424,9 +424,18 @@ p {
 .lightbox_slider {
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    justify-content: center;
     align-items: flex-end;
+    row-gap: 50px;
     width: 1400px;
+    height: 90vh;
+}
+
+.slider_image_wrapper {
+    width: 1400px;
+    height: 80vh;
+    max-height: 800px;
+    object-fit: contain;
 }
 
 .carousel-control-next {
