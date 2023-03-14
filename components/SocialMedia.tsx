@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 function SocialMedia() {
@@ -12,10 +13,12 @@ function SocialMedia() {
                     target="_blank"
                     id="youtube"
                 >
-                    <img
+                    <Image
                         className="social_links"
-                        src={`/assets/social/youtube_light.svg`}
-                        alt=""
+                        src="/assets/social/youtube_light.svg"
+                        alt="instagram logo"
+                        width={22}
+                        height={22}
                     />
                 </Link>
                 <Link
@@ -23,10 +26,12 @@ function SocialMedia() {
                     target="_blank"
                     id="facebook"
                 >
-                    <img
+                    <Image
                         className="social_links"
-                        src={`/assets/social/facebook_light.svg`}
-                        alt=""
+                        src="/assets/social/facebook_light.svg"
+                        alt="instagram logo"
+                        width={22}
+                        height={22}
                     />
                 </Link>
                 <Link
@@ -34,10 +39,12 @@ function SocialMedia() {
                     target="_blank"
                     id="instagram"
                 >
-                    <img
+                    <Image
                         className="social_links"
-                        src={`/assets/social/instagram_light.svg`}
-                        alt=""
+                        src="/assets/social/instagram_light.svg"
+                        alt="instagram logo"
+                        width={22}
+                        height={22}
                     />
                 </Link>
             </div>
