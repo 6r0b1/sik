@@ -68,14 +68,6 @@ function Header({ location }) {
                             >
                                 about
                             </Link>
-                            <Link
-                                className="main_nav_link"
-                                id="contact"
-                                href="/contact"
-                                onClick={closeMenu}
-                            >
-                                contact
-                            </Link>
                         </div>
                         <div className="additional_nav">
                             <div>

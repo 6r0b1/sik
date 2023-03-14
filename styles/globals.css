@@ -23,6 +23,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
 }
 
 header {
@@ -66,7 +67,6 @@ h2 {
 
 a {
     text-decoration: underline;
-
     text-decoration-thickness: 4px;
     text-decoration-color: var(--accent-01);
     color: var(--warm-black);
@@ -80,7 +80,7 @@ a:hover {
 }
 
 p {
-    margin: 0;
+    margin: 0 2px;
     font-size: 18px;
     font-weight: 500;
     color: var(--warm-black);
