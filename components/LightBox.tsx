@@ -6,14 +6,6 @@ import Carousel from "react-bootstrap/Carousel";
 function LightBox({ images, selectedIndex }) {
     return (
         <>
-            {/* <div className="lightbox_slider">
-                <Image
-                    alt="close button"
-                    src="/controls/close.svg"
-                    width={35}
-                    height={35}
-                    style={{ marginRight: "20px" }}
-                /> */}
             <Carousel
                 defaultActiveIndex={selectedIndex}
                 interval={null}
@@ -31,7 +23,6 @@ function LightBox({ images, selectedIndex }) {
                     </Carousel.Item>
                 ))}
             </Carousel>
-            {/* </div> */}
         </>
     );
 }
