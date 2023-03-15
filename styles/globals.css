@@ -570,7 +570,7 @@ p {
     .menu_button_mobile {
         position: fixed;
         right: 5%;
-        bottom: 70px;
+        bottom: 25px;
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -679,19 +679,20 @@ p {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        row-gap: 25px;
+        row-gap: 35px;
         width: 100%;
     }
 
     .credits_list_item {
         display: flex;
         flex-direction: column;
+        row-gap: 10px;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
     .credit_name {
-        color: var(--accent-01);
+        text-decoration: underline;
     }
 }
 

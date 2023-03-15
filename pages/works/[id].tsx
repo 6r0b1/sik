@@ -181,8 +181,10 @@ export default function Works() {
                         <div className="credits_list">
                             {works[0].credits.map((credit, index) => (
                                 <div key={index} className="credits_list_item">
-                                    <p>{credit.role}:</p>
-                                    <p className="credit_name">{credit.name}</p>
+                                    <p className="credit_name">
+                                        {credit.role}:
+                                    </p>
+                                    <p>{credit.name}</p>
                                 </div>
                             ))}
                         </div>
