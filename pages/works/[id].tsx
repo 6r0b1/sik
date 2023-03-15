@@ -58,7 +58,7 @@ export default function Works() {
                     name: "Tümay Kılınçel",
                 },
                 {
-                    role: "Künstlerische Leitung, Video: ",
+                    role: "Künstlerische Leitung, Video",
                     name: "Cornelius Schaper",
                 },
             ],
@@ -88,15 +88,16 @@ export default function Works() {
             <Header location="works | details" />
             <main>
                 <div className="spacer_100"></div>
-                <Image
-                    src={`${works[0].main_img_src}`}
-                    alt=""
-                    width={1400}
-                    height={820}
-                    style={{
-                        objectFit: "cover",
-                    }}
-                />
+                <div className="main_image_container">
+                    <Image
+                        src={`${works[0].main_img_src}`}
+                        alt=""
+                        fill
+                        style={{
+                            objectFit: "cover",
+                        }}
+                    />
+                </div>
                 <div className="spacer_100"></div>
                 <div className="works_main">
                     <div className="work_details">
@@ -146,8 +147,7 @@ export default function Works() {
                                     className="grid_image"
                                     src={image.src}
                                     alt={image.alt}
-                                    width={450}
-                                    height={320}
+                                    fill
                                     style={{
                                         objectFit: "cover",
                                     }}
@@ -181,8 +181,8 @@ export default function Works() {
                         <div className="credits_list">
                             {works[0].credits.map((credit, index) => (
                                 <div key={index} className="credits_list_item">
-                                    <p>{credit.role}</p>
-                                    <p>{credit.name}</p>
+                                    <p>{credit.role}:</p>
+                                    <p className="credit_name">{credit.name}</p>
                                 </div>
                             ))}
                         </div>

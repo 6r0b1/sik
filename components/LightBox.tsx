@@ -10,6 +10,8 @@ function LightBox({ images, selectedIndex }) {
                 defaultActiveIndex={selectedIndex}
                 interval={null}
                 variant="dark"
+                touch={true}
+                keyboard={true}
             >
                 {images.map((image, index) => (
                     <Carousel.Item key={index}>

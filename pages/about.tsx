@@ -23,15 +23,16 @@ export default function About() {
             <Header location="about" />
             <main>
                 <div className="spacer_100"></div>
-                <Image
-                    src="/works/images/kaleidanceskope_08_web_kuekelhahn.jpg"
-                    alt=""
-                    width={1400}
-                    height={820}
-                    style={{
-                        objectFit: "cover",
-                    }}
-                />
+                <div className="main_image_container">
+                    <Image
+                        src="/works/images/kaleidanceskope_08_web_kuekelhahn.jpg"
+                        alt=""
+                        fill
+                        style={{
+                            objectFit: "cover",
+                        }}
+                    />
+                </div>
                 <div className="spacer_100"></div>
                 <div className="works_main">
                     <div className="work_details">
