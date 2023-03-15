@@ -570,7 +570,7 @@ p {
     .menu_button_mobile {
         position: fixed;
         right: 5%;
-        top: 85vh;
+        top: 80vh;
         /* bottom: 25px; */
         width: 60px;
         height: 60px;
