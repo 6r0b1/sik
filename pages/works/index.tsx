@@ -21,6 +21,30 @@ export default function Works() {
             description:
                 "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.Mus sam quatibus. Bo. Epeditio. Cusdam et estibus, quos explign atquasp erferita quae eatia comnit expe con preius rerovit!",
         },
+        {
+            id: 1,
+            title: "kaleiDANCEscope (Edition asphalt Festival)",
+            description:
+                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
+        },
+        {
+            id: 2,
+            title: "Other Performance Title",
+            description:
+                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.Mus sam quatibus. Bo. Epeditio. Cusdam et estibus, quos explign atquasp erferita quae eatia comnit expe con preius rerovit!",
+        },
+        {
+            id: 1,
+            title: "kaleiDANCEscope (Edition asphalt Festival)",
+            description:
+                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
+        },
+        {
+            id: 2,
+            title: "Other Performance Title",
+            description:
+                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.Mus sam quatibus. Bo. Epeditio. Cusdam et estibus, quos explign atquasp erferita quae eatia comnit expe con preius rerovit!",
+        },
     ];
     return (
         <>
@@ -51,6 +75,7 @@ export default function Works() {
                         </div>
                     ))}
                 </div>
+                <div className="spacer_100"></div>
             </main>
             <Footer />
         </>

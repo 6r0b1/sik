@@ -38,27 +38,30 @@ export default function About() {
                     <div className="work_details">
                         <h2>should-I-know</h2>
                         <p>
-                            Tümay Kılınçel und Cornelius Schaper arbeiten seit
-                            2014 zusammen und seit 2022 unter dem Namen
-                            should-I-know. Ihre Arbeiten umfassen unter anderem
-                            kaleiDANCEscope (2022) in Koproduktion mit asphalt
-                            Festival und FFT Düsseldorf. 2020/21 waren sie
-                            zusammen mit Jungyun Bae Teil des mentoring
-                            Programms des LFDK NRW und setzten sich mit „Räumen“
-                            auseinander. 2021 hatte sie außerdem eine Residenz
-                            an der Herderschule/Mousonturm Frankfurt a.M. inne.
-                            2019 und 2020 waren sie Teil der hessischen FLUX
-                            Residenzen im ländlichen Raum. Ihre erste Arbeit
-                            DANCE BOX (2014) in Koproduktion mit dem FFT und
-                            Freischwimmer Festival tourte 3 Jahre durch
-                            Deutschland, Österreich und Schweiz. Should-I- know
-                            definieren sich durch interdisziplinäres Arbeiten
-                            auf Augenhöhe. In ihren gemeinsamen Arbeiten werden
-                            vorhandene Strukturen des öffentlichen Raums neu
-                            geordnet, umgedeutet und unterwandert: Die
-                            Projektideen durchleuchten Wechselwirkungen von
-                            Innen und Außen, Privat und Öffentlich, Einschluss
-                            und Ausschluss.{" "}
+                            Tümay Kılınçel und Cornelius Schaper nennen sich
+                            zusammen should-I-know. Als Duo arbeiten sie
+                            gemeinsam an Projekten im Bereich von Kunst und
+                            Kultur. Wichtig ist ihnen immer einen Bezug zum Raum
+                            und der Öffentlichkeit zu haben. Als should-I-know
+                            möchten sie nämlich mit ihren Arbeiten nicht nur im
+                            Theater zu sehen sein, sondern gehen auch zu den
+                            Menschen. Hier kann Austausch nochmal anders
+                            stattfinden – ganz direkt. <br />
+                            <br />
+                            Tümay Kılınçel hat in Berlin und Gießen
+                            zeitgenössischen Tanz, Kontext Choreografie und
+                            Performance studiert. Seitdem macht sie
+                            unterschiedliche Arbeiten auf und hinter der Bühne.{" "}
+                            <br />
+                            <br />
+                            Cornelius Schaper beschäftigt sich mit Video und
+                            Performance. Er macht Video-Installationen und
+                            arbeitet als Dramaturg und in anderen Positionen im
+                            Bereich der performativen Arbeit.
+                            <br />
+                            <br />
+                            Die beiden arbeiten seit vielen Jahren zusammen,
+                            manchmal auch mit anderen Künstler*innen.{" "}
                         </p>
                     </div>
 
