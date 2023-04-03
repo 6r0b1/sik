@@ -107,16 +107,16 @@ export default function Works() {
                             <div className="work_details">
                                 <h2>Links, Berichte und Erwähnungen</h2>
                                 {works[0].links.map((link, index) => (
-                                    <p key={index}>
-                                        {link.link_text}{" "}
+                                    <div key={index} className="link_container">
+                                        {"->"}
                                         <a
                                             href={link.link}
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            {"-> zum Artitel"}
+                                            <p>{link.link_text}</p>
                                         </a>
-                                    </p>
+                                    </div>
                                 ))}
                             </div>
                         )}
@@ -176,17 +176,22 @@ export default function Works() {
 
                 <div className="spacer_100"></div>
                 {works[0].credits && (
-                    <div className="credits">
-                        <h2>Credits</h2>
-                        <div className="credits_list">
-                            {works[0].credits.map((credit, index) => (
-                                <div key={index} className="credits_list_item">
-                                    <p className="credit_name">
-                                        {credit.role}:
-                                    </p>
-                                    <p>{credit.name}</p>
-                                </div>
-                            ))}
+                    <div className="credits_wrapper">
+                        <div className="credits">
+                            <h2>Credits</h2>
+                            <div className="credits_list">
+                                {works[0].credits.map((credit, index) => (
+                                    <div
+                                        key={index}
+                                        className="credits_list_item"
+                                    >
+                                        <p className="credit_name">
+                                            {credit.role}:
+                                        </p>
+                                        <p>{credit.name}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 )}

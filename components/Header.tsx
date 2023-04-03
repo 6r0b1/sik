@@ -38,11 +38,12 @@ function Header({ location }) {
         <>
             <header>
                 <div className="menu_button_mobile" onClick={toggleMenu}>
-                    <img
+                    {/* <img
                         className="menu_icon"
                         src="/controls/menu.svg"
                         alt="menu button"
-                    />
+                    /> */}
+                    <div className="inner_circle"></div>
                 </div>
                 <div className={`nav_wrapper${navBackground}`}>
                     <div className="nav_bar">
@@ -61,6 +62,16 @@ function Header({ location }) {
                         onMouseLeave={closeMenu}
                     >
                         <menu>
+                            <div
+                                className="menu_button_mobile"
+                                onClick={toggleMenu}
+                            >
+                                <img
+                                    className="menu_icon"
+                                    src="/controls/close.svg"
+                                    alt="menu button"
+                                />
+                            </div>
                             <div className="main_nav">
                                 <Link
                                     className="main_nav_link"

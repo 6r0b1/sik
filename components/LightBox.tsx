@@ -9,6 +9,7 @@ function LightBox({ images, selectedIndex }) {
             <Carousel
                 defaultActiveIndex={selectedIndex}
                 interval={null}
+                indicators={false}
                 variant="dark"
                 touch={true}
                 keyboard={true}

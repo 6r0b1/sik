@@ -2,10 +2,33 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useState } from "react";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import LightBox from "../components/LightBox";
 
 export default function About() {
+    const [modalState, setModalState] = useState("_hidden");
+    const [selectedImage, setSelectedImage] = useState(0);
+    const images = [
+        { src: "/works/images/kds-1.jpg", alt: "image one" },
+        { src: "/works/images/kds-2.jpg", alt: "image two" },
+        { src: "/works/images/kds-3.jpg", alt: "image three" },
+        { src: "/works/images/kds-1.jpg", alt: "image one" },
+        { src: "/works/images/kds-2.jpg", alt: "image two" },
+        { src: "/works/images/kds-3.jpg", alt: "image three" },
+        { src: "/works/images/kds-1.jpg", alt: "image one" },
+        { src: "/works/images/kds-2.jpg", alt: "image two" },
+        { src: "/works/images/kds-3.jpg", alt: "image three" },
+    ];
+    function openModal(index) {
+        setSelectedImage(index);
+        setModalState("_shown");
+    }
+    function closeModal() {
+        setModalState("_hidden");
+    }
     return (
         <>
             <Head>
@@ -79,6 +102,44 @@ export default function About() {
                             +49 151 55555
                         </p>
                     </div>
+                </div>
+                <div className="spacer_100"></div>
+                <div className="image_grid">
+                    {images.map((image, index) => (
+                        <div className="grid_item" key={index}>
+                            <div
+                                className="grid_shader"
+                                onClick={() => openModal(index)}
+                            ></div>
+                            <Image
+                                className="grid_image"
+                                src={image.src}
+                                alt={image.alt}
+                                fill
+                                style={{
+                                    objectFit: "cover",
+                                }}
+                            />
+                        </div>
+                    ))}
+                </div>
+                <div className={`modal_bg${modalState}`}>
+                    {modalState === "_shown" && (
+                        <div className="lightbox_slider">
+                            <Image
+                                className="close_button"
+                                onClick={closeModal}
+                                alt="close button"
+                                src="/controls/close.svg"
+                                width={35}
+                                height={35}
+                            />
+                            <LightBox
+                                images={images}
+                                selectedIndex={selectedImage}
+                            />
+                        </div>
+                    )}
                 </div>
                 <div className="spacer_100"></div>
             </main>
