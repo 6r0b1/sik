@@ -88,7 +88,7 @@ function Header({ location }) {
                                 <Link
                                     className="main_nav_link"
                                     id="about"
-                                    href="/abour"
+                                    href="/about"
                                     onClick={closeMenu}
                                 >
                                     about
