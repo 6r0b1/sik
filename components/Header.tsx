@@ -23,9 +23,13 @@ function Header({ location }) {
     }
     function openMenu() {
         setMenuState("_open");
+        // setNavBackground("_solid");
     }
     function closeMenu() {
         setMenuState("_closed");
+        if (window.scrollY === 0) {
+            // setNavBackground("_transparent");
+        }
     }
     function toggleMenu() {
         if (menuState === "_open") {
@@ -75,14 +79,6 @@ function Header({ location }) {
                             <div className="main_nav">
                                 <Link
                                     className="main_nav_link"
-                                    id="home"
-                                    href="/"
-                                    onClick={closeMenu}
-                                >
-                                    home
-                                </Link>
-                                <Link
-                                    className="main_nav_link"
                                     id="works"
                                     href="/works"
                                     onClick={closeMenu}
@@ -92,10 +88,18 @@ function Header({ location }) {
                                 <Link
                                     className="main_nav_link"
                                     id="about"
-                                    href="/about"
+                                    href="/abour"
                                     onClick={closeMenu}
                                 >
                                     about
+                                </Link>
+                                <Link
+                                    className="main_nav_link"
+                                    id="contact"
+                                    href="mailto:info@should-i-know.com?subject=Anfrage von der Webseite"
+                                    onClick={closeMenu}
+                                >
+                                    contact
                                 </Link>
                             </div>
                             <div className="additional_nav">
@@ -113,16 +117,8 @@ function Header({ location }) {
                                         id="deutsche-sprache"
                                         href="/einfache-sprache"
                                     >
-                                        deu
+                                        de
                                     </Link>{" "}
-                                    |{" "}
-                                    <Link
-                                        className="additional_nav_link"
-                                        id="einfache-sprache"
-                                        href="/einfache-sprache"
-                                    >
-                                        einfach
-                                    </Link>
                                 </div>
                                 <SocialMedia />
                             </div>

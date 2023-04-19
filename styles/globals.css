@@ -1,7 +1,7 @@
 :root {
     /* colors */
     --warm-black: #160c00;
-    --accent-01: #f0cde4;
+    --accent-01: #00fff7;
     --modal-bg: rgba(255, 255, 255, 0.9);
     /* transitions */
     --menu-transition: all 0.4s ease-in-out;
@@ -175,6 +175,7 @@ p {
 }
 
 .nav_wrapper_solid {
+    z-index: 2000;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -580,11 +581,11 @@ p {
 
     .menu_button_mobile {
         position: fixed;
-        right: 5%;
-        top: 80vh;
+        right: 45px;
+        top: 75vh;
         /* bottom: 25px; */
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         /* border: 5px solid var(--warm-black); */
         background-color: var(--warm-black);
@@ -594,9 +595,9 @@ p {
     }
 
     .inner_circle {
-        width: 37px;
-        height: 37px;
-        border: var(--accent-01) 9px solid;
+        width: 42px;
+        height: 42px;
+        border: var(--accent-01) 11px solid;
     }
 
     .menu_icon {

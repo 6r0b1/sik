@@ -6,7 +6,6 @@ function Footer() {
             <div className="footer_content">
                 <div className="footer_links">
                     <p className="footer_p">should-I-know</p>
-                    <p className="footer_p">contact</p>
                     <p className="footer_p">privacy</p>
                     <p className="footer_p">imprint</p>
                     <p className="footer_p">acessibility</p>
