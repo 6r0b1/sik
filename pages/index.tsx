@@ -5,7 +5,10 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default function Home() {
+export default function Home({ locale }) {
+    const copytext = locale.Home;
+    console.log(copytext);
+
     return (
         <>
             <Head>
@@ -40,4 +43,12 @@ export default function Home() {
             </main>
         </>
     );
+}
+
+export function getStaticProps({ locale }) {
+    return {
+        props: {
+            locale: require(`../locales/${locale}.json`),
+        },
+    };
 }

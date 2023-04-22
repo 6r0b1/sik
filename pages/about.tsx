@@ -8,10 +8,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LightBox from "../components/LightBox";
 
+import { IImages } from "@/types/interfaces";
+
 export default function About() {
     const [modalState, setModalState] = useState("_hidden");
     const [selectedImage, setSelectedImage] = useState(0);
-    const images = [
+    const images: IImages[] = [
         { src: "/works/images/kds-1.jpg", alt: "image one" },
         { src: "/works/images/kds-2.jpg", alt: "image two" },
         { src: "/works/images/kds-3.jpg", alt: "image three" },
