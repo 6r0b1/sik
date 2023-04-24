@@ -359,7 +359,6 @@ p {
     width: 300px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .hero {
@@ -775,6 +774,13 @@ p {
     .credit_name {
         font-weight: 800;
         /* text-decoration: underline; */
+    }
+
+    .imprint_details {
+        display: flex;
+        flex-direction: column;
+        row-gap: 75px;
+        width: 90vw;
     }
 
     .contributors_container {
