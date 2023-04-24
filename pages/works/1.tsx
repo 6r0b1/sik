@@ -37,7 +37,7 @@ export default function Works({ locale }) {
                     venue: "Gutenbergplatz",
                 },
             ],
-            main_img_src: "/works/images/kaleidanceskope_08_web_kuekelhahn.jpg",
+            main_img_src: "/works/images/kds_asphalt_cover.jpg",
             images: [
                 { src: "/works/images/kds_mainz_01.jpg", alt: "image one" },
                 { src: "/works/images/kds_mainz_03.jpg", alt: "image two" },
