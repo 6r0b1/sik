@@ -20,7 +20,7 @@ export default function Privacy({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location="about" />
+            <Header location={locale.privacy.subtitle_01} />
             <main>
                 <div className="spacer_50_percent"></div>
                 <div className="works_main">

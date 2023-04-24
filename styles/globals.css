@@ -326,6 +326,42 @@ p {
     padding-top: 5px;
 }
 
+.imprint_details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 75px;
+    width: 1200px;
+}
+
+.contributors_container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    width: 100%;
+}
+
+.sponsors_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 50px;
+    width: 100%;
+}
+
+.contributor {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.contributor_image {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -739,6 +775,18 @@ p {
     .credit_name {
         font-weight: 800;
         /* text-decoration: underline; */
+    }
+
+    .contributors_container {
+        flex-direction: column;
+        row-gap: 75px;
+    }
+
+    .sponsors_container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 75px;
+        width: 90vw;
     }
 }
 

@@ -58,6 +58,17 @@
             "Tümay Kılınçel , Cornelius Schaper",
             "Kontakt:",
             "mail@should-I-know.com"
+        ],
+        "subtitle_01": "Webdesign & Entwicklung:",
+        "text_01": ["Veit Hüter"],
+        "subtitle_02": "Texte, Lektorat, Übersetzung: ",
+        "text_02": ["Annika Restin"],
+        "subtitle_03": "should-I-know sind: ",
+        "text_03": ["Tümay Kılınçel & Cornelius Schaper"],
+        "subtitle_04": "Förder*innen:",
+        "text_04": [
+            "Ministerium für Kultur und Wissenschaft desLandes NRW",
+            "NRW Landesbüro Freie Darstellende Künste"
         ]
     }
 }
