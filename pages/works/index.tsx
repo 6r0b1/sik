@@ -62,6 +62,7 @@ export default function Works({ locale }) {
             </Head>
             <Header location="works" nav={locale.nav} />
             <main>
+                <div className="spacer_50_percent"></div>
                 <div className="works_list">
                     {works.map((work) => (
                         <div className="work_entry" key={work.id}>

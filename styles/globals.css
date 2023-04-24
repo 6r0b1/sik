@@ -391,7 +391,6 @@ p {
     row-gap: 75px;
     width: 800px;
     min-height: 100vh;
-    padding-top: 50vh;
 }
 
 .work_entry {
@@ -721,7 +720,6 @@ p {
 
     .works_list {
         width: 90%;
-        padding-top: 150px;
     }
 
     .work_entry {
