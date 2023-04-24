@@ -16,7 +16,7 @@ export default function Works({ locale }) {
     const works: IWork[] = [
         {
             id: 1,
-            title: "kaleiDANCEscope (Edition asphalt Festival)",
+            title: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
             description:
                 "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
             description_long: [
