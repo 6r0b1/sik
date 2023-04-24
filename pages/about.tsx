@@ -10,19 +10,17 @@ import LightBox from "../components/LightBox";
 
 import { IImages } from "@/types/interfaces";
 
-export default function About() {
+export default function About({ locale }) {
     const [modalState, setModalState] = useState("_hidden");
     const [selectedImage, setSelectedImage] = useState(0);
     const images: IImages[] = [
-        { src: "/works/images/kds-1.jpg", alt: "image one" },
-        { src: "/works/images/kds-2.jpg", alt: "image two" },
-        { src: "/works/images/kds-3.jpg", alt: "image three" },
-        { src: "/works/images/kds-1.jpg", alt: "image one" },
-        { src: "/works/images/kds-2.jpg", alt: "image two" },
-        { src: "/works/images/kds-3.jpg", alt: "image three" },
-        { src: "/works/images/kds-1.jpg", alt: "image one" },
-        { src: "/works/images/kds-2.jpg", alt: "image two" },
-        { src: "/works/images/kds-3.jpg", alt: "image three" },
+        { src: "/statics/about_01.jpg", alt: "" },
+        { src: "/statics/about_02.jpg", alt: "" },
+        { src: "/statics/about_03.jpg", alt: "" },
+        { src: "/statics/about_04.jpg", alt: "" },
+        { src: "/statics/about_05.jpg", alt: "" },
+        { src: "/statics/about_06.jpg", alt: "" },
+        { src: "/statics/about_07.jpg", alt: "" },
     ];
     function openModal(index) {
         setSelectedImage(index);
@@ -50,7 +48,7 @@ export default function About() {
                 <div className="spacer_100"></div>
                 <div className="main_image_container">
                     <Image
-                        src="/works/images/kaleidanceskope_08_web_kuekelhahn.jpg"
+                        src="/statics/about_main.jpg"
                         alt=""
                         fill
                         style={{
@@ -62,32 +60,9 @@ export default function About() {
                 <div className="works_main">
                     <div className="work_details">
                         <h2>should-I-know</h2>
-                        <p>
-                            Tümay Kılınçel und Cornelius Schaper nennen sich
-                            zusammen should-I-know. Als Duo arbeiten sie
-                            gemeinsam an Projekten im Bereich von Kunst und
-                            Kultur. Wichtig ist ihnen immer einen Bezug zum Raum
-                            und der Öffentlichkeit zu haben. Als should-I-know
-                            möchten sie nämlich mit ihren Arbeiten nicht nur im
-                            Theater zu sehen sein, sondern gehen auch zu den
-                            Menschen. Hier kann Austausch nochmal anders
-                            stattfinden – ganz direkt. <br />
-                            <br />
-                            Tümay Kılınçel hat in Berlin und Gießen
-                            zeitgenössischen Tanz, Kontext Choreografie und
-                            Performance studiert. Seitdem macht sie
-                            unterschiedliche Arbeiten auf und hinter der Bühne.{" "}
-                            <br />
-                            <br />
-                            Cornelius Schaper beschäftigt sich mit Video und
-                            Performance. Er macht Video-Installationen und
-                            arbeitet als Dramaturg und in anderen Positionen im
-                            Bereich der performativen Arbeit.
-                            <br />
-                            <br />
-                            Die beiden arbeiten seit vielen Jahren zusammen,
-                            manchmal auch mit anderen Künstler*innen.{" "}
-                        </p>
+                        {locale.about.text_01.map((p, i) => (
+                            <p key={i}>{p}</p>
+                        ))}
                     </div>
 
                     <div className="work_dates">
@@ -97,11 +72,6 @@ export default function About() {
                             email:
                             <br />
                             info@sould-i-know.de
-                        </p>
-                        <p>
-                            phone:
-                            <br />
-                            +49 151 55555
                         </p>
                     </div>
                 </div>
@@ -145,7 +115,15 @@ export default function About() {
                 </div>
                 <div className="spacer_100"></div>
             </main>
-            <Footer />
+            <Footer nav={locale.nav} />
         </>
     );
+}
+
+export function getStaticProps({ locale }) {
+    return {
+        props: {
+            locale: require(`../locales/${locale}.json`),
+        },
+    };
 }

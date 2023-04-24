@@ -93,7 +93,7 @@ export default function Privacy({ locale }) {
                                     src="/assets/sponsor_logos/LFDK_Logo_4f.jpg"
                                     alt="Annika Restin"
                                     fill
-                                    objectFit="contain"
+                                    style={{ objectFit: "contain" }}
                                 />
                             </div>
                         </div>
