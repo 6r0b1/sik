@@ -22,11 +22,19 @@ export default function Home({ locale }) {
             </Head>
             <main>
                 <Header location="" />
-                <img
+                {/* <img
                     className="hero_background"
                     src="/statics/hero.jpg"
                     alt=""
-                />
+                /> */}
+                <video
+                    className="hero_background"
+                    src="/statics/backdrop_01.mov"
+                    autoPlay
+                    muted
+                    loop
+                    poster="/statics/backdrop_01.jpg"
+                ></video>
                 <div className="hero">
                     <div className="hero_txt">
                         <h1>
@@ -35,7 +43,7 @@ export default function Home({ locale }) {
                             I-know
                         </h1>
                     </div>
-                    <Footer />
+                    <Footer nav={locale.nav} />
                 </div>
             </main>
         </>

@@ -53,7 +53,7 @@ function Header({ location }) {
                     <div className="nav_bar">
                         <p className="logo">
                             <Link className="logo_link" id="home" href="/">
-                                s-I-k
+                                sIk
                             </Link>
                         </p>
                         <div className="menu_button" onMouseEnter={openMenu}>

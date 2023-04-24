@@ -1,5 +1,11 @@
 {
-    "Home": {
-        "hello": "Welcome to Next.js!"
-    }
+    "nav": {
+        "works": "Arbeiten",
+        "about": "Über sIk",
+        "contact": "Kontakt",
+        "privacy": "Datenschutz",
+        "imprint": "Impressum",
+        "accessibility": "Barrierefreiheit"
+    },
+    "home": {}
 }
