@@ -75,7 +75,6 @@ export default function About({ locale }) {
                         </p>
                     </div>
                 </div>
-                <div className="spacer_100"></div>
                 <div className="image_grid">
                     {images.map((image, index) => (
                         <div className="grid_item" key={index}>
