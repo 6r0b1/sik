@@ -33,6 +33,7 @@ export default function Home({ locale }) {
                     autoPlay
                     muted
                     loop
+                    playsInline
                     poster="/statics/backdrop_01.jpg"
                 ></video>
                 <div className="hero">

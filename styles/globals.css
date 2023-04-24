@@ -711,7 +711,7 @@ p {
         max-width: none;
     }
 
-    .footer_links {
+    .footer_links_container {
         flex-direction: column;
         row-gap: 10px;
     }
