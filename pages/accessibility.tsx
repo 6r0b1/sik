@@ -21,7 +21,10 @@ export default function Accessibility({ locale }) {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <main>
-                <Header location={locale.accessibility.title} />
+                <Header
+                    location={locale.accessibility.title}
+                    nav={locale.nav}
+                />
 
                 <div className="spacer_50_percent"></div>
                 <div className="works_main">

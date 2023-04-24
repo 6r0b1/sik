@@ -60,7 +60,7 @@ export default function Works({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location="works" />
+            <Header location="works" nav={locale.nav} />
             <main>
                 <div className="works_list">
                     {works.map((work) => (

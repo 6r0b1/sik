@@ -43,7 +43,7 @@ export default function About({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location={locale.about.title} />
+            <Header location={locale.about.title} nav={locale.nav} />
             <main>
                 <div className="spacer_100"></div>
                 <div className="main_image_container">

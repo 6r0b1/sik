@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 import SocialMedia from "./SocialMedia";
 
-function Header({ location }) {
+function Header({ location, nav }) {
     const [menuState, setMenuState] = useState("_closed");
     const [navBackground, setNavBackground] = useState("_transparent");
     useEffect(() => {
@@ -83,7 +83,7 @@ function Header({ location }) {
                                     href="/works"
                                     onClick={closeMenu}
                                 >
-                                    works
+                                    {nav.works}
                                 </Link>
                                 <Link
                                     className="main_nav_link"
@@ -91,7 +91,7 @@ function Header({ location }) {
                                     href="/about"
                                     onClick={closeMenu}
                                 >
-                                    about
+                                    {nav.about}
                                 </Link>
                                 <Link
                                     className="main_nav_link"
@@ -99,7 +99,7 @@ function Header({ location }) {
                                     href="mailto:info@should-i-know.com?subject=Anfrage von der Webseite"
                                     onClick={closeMenu}
                                 >
-                                    contact
+                                    {nav.contact}
                                 </Link>
                             </div>
                             <div className="additional_nav">

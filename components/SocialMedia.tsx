@@ -15,7 +15,7 @@ function SocialMedia() {
                 >
                     <Image
                         className="social_links"
-                        src="/assets/social/youtube_light.svg"
+                        src="/assets/social/vimeo_light.svg"
                         alt="instagram logo"
                         width={22}
                         height={22}

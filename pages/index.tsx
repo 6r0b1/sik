@@ -21,7 +21,7 @@ export default function Home({ locale }) {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <main>
-                <Header location="" />
+                <Header location="" nav={locale.nav} />
                 {/* <img
                     className="hero_background"
                     src="/statics/hero.jpg"
