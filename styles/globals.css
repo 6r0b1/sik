@@ -414,7 +414,6 @@ p {
     justify-content: space-between;
     column-gap: 25px;
     width: 1200px;
-    min-height: 50vh;
 }
 
 .work_details {
