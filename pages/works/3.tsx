@@ -16,50 +16,55 @@ export default function Works({ locale }) {
     const works: IWork[] = [
         {
             id: 1,
-            title: "kaleiDANCEscope (Edition asphalt Festival)",
+            title: "ohne Titel (2021)",
             description:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
-            description_long:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+            description_long: [
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+                "Es ging bei der Residenz darum, in den Schul-Räumen Störungen zu erforschen. Dazu hat should-I-know spiegelndes Material benutzt und in der 1. Etage von der Schule eine Nische mit Rettungsfolie ausgekleidet. In der 2. Etage wurden die Glas-Türen mit Spiegel-Karton bestückt. Die Aktionen hatten keinen Titel, aber alle, die mit der Schule zu tun haben, konnten sich eigene Namen dafür ausdenken.",
+                "Es ist herausgekommen, dass sich der gewohnte Weg der Menschen in der Schule durch die „spiegelnden Störungen“ im Schul-Gebäude verändert. Die Körper springen, drehen und tanzen im Raum. Sie reflektieren mit der Spiegelung und man sieht sich selbst und andere neu.",
+            ],
             links: [
                 {
-                    link: "https://www.pinkblau.de",
+                    link: "https://tanzplattformrheinmain.de/de/professionell-tanzen/residenzen/residenz-an-schulen/",
                     link_text:
-                        "Tümay Kılınçel & Cornelius Schaper im Interview – „Tänze zum Preis einer Tasse Kaffee“ (Alexandra Wehrmann, theycallitkleinparis, 05.07.2022) ",
-                },
-                {
-                    link: "https://www.pinkblau.de",
-                    link_text:
-                        '"Die Tanzwunschmaschine ist eine begehbare Schatzkiste. Darin funkelt es ganz wunderbar. Wer sie wieder verlässt, lächelt ein vergnügliches Ich-weiß-da-was-Lächeln, das man sofort stibitzen möchte. Es ist eben schon ein bisschen magisch, was sich da als Premiere in dem lavendelblauen Wohnwagen auf dem Gertrudismarkt in Eller abspielt."',
+                        "Herder-Residenz bei der Tanzplattform Rhein-Main",
                 },
             ],
             dates: [
                 {
-                    date: "22.05.2023",
-                    time: "12:00",
-                    venue: "Gertrudisplatz, Eller",
+                    date: "Oktober, November 2021",
+                    time: "tägl.",
+                    venue: "IGS Herder, Frankfurt am Main",
                 },
             ],
-            main_img_src: "/works/images/kaleidanceskope_08_web_kuekelhahn.jpg",
+            main_img_src: "/works/images/hmr_03.jpg",
             images: [
-                { src: "/works/images/kds-1.jpg", alt: "image one" },
-                { src: "/works/images/kds-2.jpg", alt: "image two" },
-                { src: "/works/images/kds-3.jpg", alt: "image three" },
-                { src: "/works/images/kds-1.jpg", alt: "image one" },
-                { src: "/works/images/kds-2.jpg", alt: "image two" },
-                { src: "/works/images/kds-3.jpg", alt: "image three" },
-                { src: "/works/images/kds-1.jpg", alt: "image one" },
-                { src: "/works/images/kds-2.jpg", alt: "image two" },
-                { src: "/works/images/kds-3.jpg", alt: "image three" },
+                { src: "/works/images/hmr_01.jpg", alt: "" },
+                { src: "/works/images/hmr_02.jpg", alt: "" },
+                { src: "/works/images/hmr_03.jpg", alt: "" },
+                { src: "/works/images/hmr_04.jpg", alt: "" },
+                { src: "/works/images/hmr_05.jpg", alt: "" },
+                { src: "/works/images/hmr_06.jpg", alt: "" },
+                { src: "/works/images/hmr_07.jpg", alt: "" },
+                { src: "/works/images/hmr_08.jpg", alt: "" },
+                { src: "/works/images/hmr_09.jpg", alt: "" },
+                { src: "/works/images/hmr_10.jpg", alt: "" },
+                { src: "/works/images/hmr_11.jpg", alt: "" },
+                { src: "/works/images/hmr_12.jpg", alt: "" },
             ],
             credits: [
                 {
-                    role: "Künstlerische Leitung, Choreografie, Performance",
+                    role: "Künstlerische Leitung",
                     name: "Tümay Kılınçel",
                 },
                 {
-                    role: "Künstlerische Leitung, Video",
+                    role: "Künstlerische Leitung",
                     name: "Cornelius Schaper",
+                },
+                {
+                    role: "InitiatorInnen & Förderung",
+                    name: "Die Tanzplattform Rhein-Main, ein Projekt von Künstler*innenhaus Mousonturm und Hessischem Staatsballett, wird ermöglicht durch den Kulturfonds Frankfurt RheinMain und gefördert vom Kulturamt der Stadt Frankfurt am Main, dem Hessischen Ministerium für Wissenschaft und Kunst und der Stiftungsallianz [Aventis Foundation, BHF BANK Stiftung, Crespo Foundation, Hans Erich und Marie Elfriede Dotter-Stiftung, Dr. Marschner Stiftung, Stiftung Polytechnische Gesellschaft Frankfurt am Main].",
                 },
             ],
         },
@@ -102,20 +107,32 @@ export default function Works({ locale }) {
                 <div className="works_main">
                     <div className="work_details">
                         <h2>{works[0].title}</h2>
-                        <p>{works[0].description_long}</p>
+                        {works[0].description_long ? (
+                            works[0].description_long.map(
+                                (paragraph, index) => (
+                                    <p key={index}>{paragraph}</p>
+                                )
+                            )
+                        ) : (
+                            <p>{works[0].description}</p>
+                        )}
                         {works[0].links && (
                             <div className="work_details">
-                                <h2>Links, Berichte und Erwähnungen</h2>
+                                <h2>{locale.works.links}</h2>
                                 {works[0].links.map((link, index) => (
                                     <div key={index} className="link_container">
                                         {"->"}
-                                        <a
-                                            href={link.link}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
+                                        {link.link !== "" ? (
+                                            <a
+                                                href={link.link}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <p>{link.link_text}</p>
+                                            </a>
+                                        ) : (
                                             <p>{link.link_text}</p>
-                                        </a>
+                                        )}
                                     </div>
                                 ))}
                             </div>
@@ -126,7 +143,7 @@ export default function Works({ locale }) {
                             <h2>Dates</h2>
                             {works[0].dates.map((date, index) => (
                                 <p key={index}>
-                                    {date.date} | {date.time} Uhr
+                                    {date.date} | {date.time}
                                     <br />
                                     {date.venue}
                                 </p>
@@ -181,15 +198,20 @@ export default function Works({ locale }) {
                             <h2>Credits</h2>
                             <div className="credits_list">
                                 {works[0].credits.map((credit, index) => (
-                                    <div
-                                        key={index}
-                                        className="credits_list_item"
-                                    >
-                                        <p className="credit_name">
-                                            {credit.role}:
-                                        </p>
-                                        <p>{credit.name}</p>
-                                    </div>
+                                    <>
+                                        <div
+                                            key={index}
+                                            className="credits_list_item"
+                                        >
+                                            <p className="credit_name">
+                                                {credit.role}:
+                                            </p>
+                                            <p className="credit_person">
+                                                {credit.name}
+                                            </p>
+                                        </div>
+                                        <div className="line"></div>
+                                    </>
                                 ))}
                             </div>
                         </div>

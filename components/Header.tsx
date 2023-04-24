@@ -104,7 +104,7 @@ function Header({ location, nav }) {
                             </div>
                             <div className="additional_nav">
                                 <div>
-                                    <Link
+                                    {/* <Link
                                         className="additional_nav_link"
                                         id="english-language"
                                         href="/einfache-sprache"
@@ -118,7 +118,7 @@ function Header({ location, nav }) {
                                         href="/einfache-sprache"
                                     >
                                         de
-                                    </Link>{" "}
+                                    </Link>{" "} */}
                                 </div>
                                 <SocialMedia />
                             </div>

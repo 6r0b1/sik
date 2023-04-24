@@ -7,35 +7,20 @@ function SocialMedia() {
         <div>
             <div className="social_links_container">
                 <Link
-                    href={
-                        "https://www.youtube.com/channel/UCLA8nDtc9KlzVYiDrehRfqQ"
-                    }
+                    href={"https://vimeo.com/shouldiknow"}
                     target="_blank"
-                    id="youtube"
+                    id="vimeo"
                 >
                     <Image
                         className="social_links"
                         src="/assets/social/vimeo_light.svg"
-                        alt="instagram logo"
+                        alt="vimeo logo"
                         width={22}
                         height={22}
                     />
                 </Link>
                 <Link
-                    href={"https://www.facebook.com/MuseumVillaRot"}
-                    target="_blank"
-                    id="facebook"
-                >
-                    <Image
-                        className="social_links"
-                        src="/assets/social/facebook_light.svg"
-                        alt="instagram logo"
-                        width={22}
-                        height={22}
-                    />
-                </Link>
-                <Link
-                    href={"https://www.instagram.com/museumvillarot"}
+                    href={"https://www.instagram.com/should_i_know_/"}
                     target="_blank"
                     id="instagram"
                 >
@@ -43,6 +28,21 @@ function SocialMedia() {
                         className="social_links"
                         src="/assets/social/instagram_light.svg"
                         alt="instagram logo"
+                        width={22}
+                        height={22}
+                    />
+                </Link>
+                <Link
+                    href={
+                        "https://www.facebook.com/profile.php?id=100091401890329"
+                    }
+                    target="_blank"
+                    id="facebook"
+                >
+                    <Image
+                        className="social_links"
+                        src="/assets/social/facebook_light.svg"
+                        alt="facebook logo"
                         width={22}
                         height={22}
                     />

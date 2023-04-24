@@ -8,7 +8,9 @@
         "accessibility": "Barrierefreiheit"
     },
     "home": {},
-    "works": {},
+    "works": {
+        "links": "Presse und Links"
+    },
     "about": {
         "title": "Über",
         "text_01": [

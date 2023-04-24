@@ -2,7 +2,7 @@ export interface IWork {
     id: number;
     title: string;
     description: string;
-    description_long?: string;
+    description_long?: string[];
     links?: ILinks[];
     dates?: IDates[];
     main_img_src?: string;

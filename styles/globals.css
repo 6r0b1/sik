@@ -323,7 +323,7 @@ p {
     font-weight: 700;
     text-align: end;
     width: 200px;
-    padding-top: 5px;
+    padding-top: 11px;
 }
 
 .imprint_details {
@@ -390,7 +390,6 @@ p {
     flex-direction: column;
     row-gap: 75px;
     width: 800px;
-    min-height: 100vh;
 }
 
 .work_entry {
@@ -476,24 +475,38 @@ p {
     display: flex;
     flex-direction: column;
     row-gap: 25px;
-    width: 700px;
+    width: 100%;
 }
 
 .credits_list {
     display: flex;
     flex-direction: column;
+    row-gap: 5px;
     width: 100%;
 }
 
 .credits_list_item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    column-gap: 25px;
     width: 100%;
 }
 
 .credit_name {
     color: var(--warm-black);
+    min-width: 300px;
+}
+
+.credit_person {
+    color: var(--warm-black);
+    text-align: right;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: var(--warm-black);
 }
 
 .lightbox_slider {
@@ -771,7 +784,13 @@ p {
 
     .credit_name {
         font-weight: 800;
+        width: 100%;
         /* text-decoration: underline; */
+    }
+
+    .credit_person {
+        color: var(--warm-black);
+        text-align: left;
     }
 
     .imprint_details {

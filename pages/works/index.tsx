@@ -11,39 +11,21 @@ export default function Works({ locale }) {
     const works: IWork[] = [
         {
             id: 1,
-            title: "kaleiDANCEscope (Edition asphalt Festival)",
+            title: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
             description:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
+                "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
         },
         {
             id: 2,
-            title: "Other Performance Title",
+            title: "kaleiDANCEscope (asphalt Edition) (2022)",
             description:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.Mus sam quatibus. Bo. Epeditio. Cusdam et estibus, quos explign atquasp erferita quae eatia comnit expe con preius rerovit!",
+                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
         },
         {
-            id: 1,
-            title: "kaleiDANCEscope (Edition asphalt Festival)",
+            id: 3,
+            title: "ohne Titel (2021)",
             description:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
-        },
-        {
-            id: 2,
-            title: "Other Performance Title",
-            description:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.Mus sam quatibus. Bo. Epeditio. Cusdam et estibus, quos explign atquasp erferita quae eatia comnit expe con preius rerovit!",
-        },
-        {
-            id: 1,
-            title: "kaleiDANCEscope (Edition asphalt Festival)",
-            description:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.",
-        },
-        {
-            id: 2,
-            title: "Other Performance Title",
-            description:
-                "Id est officid que sit et vellaboreic tem quis rehendae laut iliquia cuptatame simetur? Quiatur aut omnisquatur as eum, ut porpossimus sum renducidenis explitaspit untet alitio. Is et voluptatqui omnime oditatem.Mus sam quatibus. Bo. Epeditio. Cusdam et estibus, quos explign atquasp erferita quae eatia comnit expe con preius rerovit!",
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
         },
     ];
     return (
