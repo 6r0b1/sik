@@ -10,6 +10,7 @@
     "home": {},
     "works": {},
     "about": {
+        "title": "Über",
         "text_01": [
             "Tümay Kılınçel und Cornelius Schaper nennen sich zusammen should-I-know. Als Duo arbeiten sie gemeinsam an Projekten im Bereich von Tanz, Performance & Installation. Wichtig ist ihnen immer einen Bezug zum Raum und der Öffentlichkeit zu haben. Als should-I-know möchten sie mit ihren Arbeiten nicht nur im Theater zu sehen sein, sondern gehen auch zu den Menschen. Hier kann Austausch nochmal anders stattfinden – ganz direkt.",
             "Das Duo should-I-know arbeitet seit vielen Jahren zusammen, manchmal auch mit anderen Künstler*innen. Sie arbeiten immer interdisziplinär. Das heißt, dass should-I-know sich mit verschiedenen Fragestellungen beschäftigt und nicht nur in einem Bereich arbeitet. Der gemeinsame Prozess ist wichtig, unterschiedliche Ansätze zentral. Das künstlerische Ergebnis fügt alle erforschten Themen-Teile zusammen und ist immer ortsspezifisch. Denn jedes Projekt bezieht sich genau auf den Ort, für den es bewusst gemacht wurde."
@@ -79,5 +80,15 @@
             "NRW Landesbüro Freie Darstellende Künste"
         ]
     },
-    "accessibility": {}
+    "accessibility": {
+        "title": "Barrierefreiheit",
+        "subtitle_01": "Erklärung zur Barrierefreiheit",
+        "text_01": [
+            "Diese Erklärung zur Barrierefreiheit gilt für die Website www.should-I-know.com.",
+            "Wir sind bemüht, unsere Websites und mobilen Anwendungen möglichst barrierefrei zugänglich zu machen. Dennoch sind unsere Anwendungen nicht komplett barrierefrei.",
+            "Folgende Punkte haben wir versucht umzusetzen: Wir haben uns bei der Gestaltung der Texte an Einfacher Sprache orientiert. Videoinhalte werden mit Untertiteln angeboten und Bilder verfügen über eine Bildbeschreibung, außer sie sind dekorativ. Des weiteren wurde auch bei der farblichen Gestaltung versucht, möglichst gute Kontrastwerte zu erzeugen."
+        ],
+        "subtitle_02": "Barrieren melden sowie Informationen zur Barrierefreiheit dieser Website",
+        "text_02": "Wir sind bemüht, weiter daran zu arbeiten und die barrierefreie Zugänglichkeit zu verbessern. Wenn Sie uns bestehende Barrieren mitteilen möchten und/oder Vorschläge zu anderen Lösungen haben, freuen wir uns sehr über Ihr feedback. Nutzen sie dafür bitte folgende email-Adresse:"
+    }
 }

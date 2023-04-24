@@ -10,7 +10,7 @@ import LightBox from "../../components/LightBox";
 
 import { IWork } from "@/types/interfaces";
 
-export default function Works() {
+export default function Works({ locale }) {
     const [modalState, setModalState] = useState("_hidden");
     const [selectedImage, setSelectedImage] = useState(0);
     const works: IWork[] = [
@@ -197,7 +197,15 @@ export default function Works() {
                 )}
                 <div className="spacer_100"></div>
             </main>
-            <Footer />
+            <Footer nav={locale.nav} />
         </>
     );
+}
+
+export function getServerSideProps({ locale }) {
+    return {
+        props: {
+            locale: require(`../../locales/${locale}.json`),
+        },
+    };
 }

@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 
 import { IWork } from "@/types/interfaces";
 
-export default function Works() {
+export default function Works({ locale }) {
     const works: IWork[] = [
         {
             id: 1,
@@ -77,7 +77,15 @@ export default function Works() {
                 </div>
                 <div className="spacer_100"></div>
             </main>
-            <Footer />
+            <Footer nav={locale.nav} />
         </>
     );
+}
+
+export function getStaticProps({ locale }) {
+    return {
+        props: {
+            locale: require(`../../locales/${locale}.json`),
+        },
+    };
 }
