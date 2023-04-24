@@ -39,8 +39,8 @@ export default function Accessibility({ locale }) {
                     </div>
                 </div>
                 <div className="spacer_100"></div>
-                <Footer nav={locale.nav} />
             </main>
+            <Footer nav={locale.nav} />
         </>
     );
 }

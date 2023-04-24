@@ -44,9 +44,9 @@ export default function Home({ locale }) {
                             I-know
                         </h1>
                     </div>
-                    <Footer nav={locale.nav} />
                 </div>
             </main>
+            <Footer nav={locale.nav} />
         </>
     );
 }
