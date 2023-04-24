@@ -42,7 +42,7 @@ export default function Works({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location="works" nav={locale.nav} />
+            <Header location={locale.works.title} nav={locale.nav} />
             <main>
                 <div className="spacer_50_percent"></div>
                 <div className="works_list">

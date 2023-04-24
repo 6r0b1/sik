@@ -90,7 +90,7 @@ export default function Works({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location="works | details" nav={locale.nav} />
+            <Header location={locale.works.details} nav={locale.nav} />
             <main>
                 <div className="spacer_100"></div>
                 <div className="main_image_container">
