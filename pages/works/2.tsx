@@ -65,7 +65,7 @@ export default function Works({ locale }) {
                     venue: "Trödelmarkt Aachener Platz, Ulenbergstr. 10",
                 },
             ],
-            main_img_src: "/works/images/kds_gk_cover.jpg",
+            main_img_src: "/works/images/kds_asphalt_cover.jpg",
             images: [
                 { src: "/works/images/kds_gk_01.jpg", alt: "" },
                 { src: "/works/images/kds_gk_02.jpg", alt: "" },
