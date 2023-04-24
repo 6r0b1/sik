@@ -71,7 +71,7 @@ export default function About({ locale }) {
                         <p>
                             email:
                             <br />
-                            info@sould-i-know.de
+                            mail@should-I-know.com
                         </p>
                     </div>
                 </div>

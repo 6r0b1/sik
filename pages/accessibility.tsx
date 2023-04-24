@@ -35,7 +35,12 @@ export default function Accessibility({ locale }) {
                         ))}
                         <h2>{locale.accessibility.subtitle_02}</h2>
                         <p>{locale.accessibility.text_02}</p>
-                        <p>info@sould-i-know.de</p>
+                        <Link
+                            id="contact"
+                            href={`mailto:mail@should-I-know.com?subject=${locale.accessibility.email_subject}`}
+                        >
+                            <p>mail@should-I-know.com</p>
+                        </Link>
                     </div>
                 </div>
                 <div className="spacer_100"></div>

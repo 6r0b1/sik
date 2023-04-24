@@ -5,7 +5,8 @@
         "contact": "Kontakt",
         "privacy": "Datenschutz",
         "imprint": "Impressum",
-        "accessibility": "Barrierefreiheit"
+        "accessibility": "Barrierefreiheit",
+        "email_subject": "Kontaktanfrage von der Webseite"
     },
     "home": {},
     "works": {
@@ -93,6 +94,7 @@
             "Folgende Punkte haben wir versucht umzusetzen: Wir haben uns bei der Gestaltung der Texte an Einfacher Sprache orientiert. Videoinhalte werden mit Untertiteln angeboten und Bilder verfügen über eine Bildbeschreibung, außer sie sind dekorativ. Des weiteren wurde auch bei der farblichen Gestaltung versucht, möglichst gute Kontrastwerte zu erzeugen."
         ],
         "subtitle_02": "Barrieren melden sowie Informationen zur Barrierefreiheit dieser Website",
-        "text_02": "Wir sind bemüht, weiter daran zu arbeiten und die barrierefreie Zugänglichkeit zu verbessern. Wenn Sie uns bestehende Barrieren mitteilen möchten und/oder Vorschläge zu anderen Lösungen haben, freuen wir uns sehr über Ihr feedback. Nutzen sie dafür bitte folgende email-Adresse:"
+        "text_02": "Wir sind bemüht, weiter daran zu arbeiten und die barrierefreie Zugänglichkeit zu verbessern. Wenn Sie uns bestehende Barrieren mitteilen möchten und/oder Vorschläge zu anderen Lösungen haben, freuen wir uns sehr über Ihr feedback. Nutzen sie dafür bitte folgende email-Adresse:",
+        "email_subject": "Feedback zur Barrierefreiheit"
     }
 }

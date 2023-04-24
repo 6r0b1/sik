@@ -85,7 +85,7 @@ export default function Privacy({ locale }) {
                                     src="/assets/sponsor_logos/AK_Kultur und Wissenschaft_Farbig_CMYK.jpg"
                                     alt="Annika Restin"
                                     fill
-                                    objectFit="contain"
+                                    style={{ objectFit: "contain" }}
                                 />
                             </div>
                             <div className="contributor_image">

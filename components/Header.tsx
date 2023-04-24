@@ -96,7 +96,7 @@ function Header({ location, nav }) {
                                 <Link
                                     className="main_nav_link"
                                     id="contact"
-                                    href="mailto:info@should-i-know.com?subject=Anfrage von der Webseite"
+                                    href={`mailto:mail@should-I-know.com?subject=${nav.email_subject}}`}
                                     onClick={closeMenu}
                                 >
                                     {nav.contact}
