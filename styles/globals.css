@@ -402,7 +402,8 @@ p {
 
 .main_image_container {
     position: relative;
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     height: 820px;
     object-fit: cover;
 }
