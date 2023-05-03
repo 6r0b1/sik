@@ -16,36 +16,51 @@ export default function Works({ locale }) {
     const works: IWork[] = [
         {
             id: 1,
-            title: "kaleiDANCEscope (asphalt Edition) (2022)",
-            description:
+            title_de: "kaleiDANCEscope (asphalt Edition) (2022)",
+            description_de:
                 "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
-            description_long: [
+            description_long_de: [
+                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze. In einem umgebauten Wohn-Wagen kann man sich verschiedene Tänze wünschen. Dafür geht man in den Wohn-Wagen hinein. Die Gäste und die Performer*innen sind in dem Wagen immer zu zweit allein. Was getanzt wird, entscheiden die Gäste. Die Performer*innen haben alle unterschiedliche Hintergründe: manche kommen aus dem zeitgenössischen Tanz, andere aus dem klassischen Tanz und dann gibt es auch welche, die lokale Tänze aufführen. Eine Performance dauert zwischen 3 und 7 Minuten. Es ist eine persönliche Begegnung in einem öffentlichen Raum, weil der Wohn-Wagen überall aufgestellt werden kann. Das kaleiDANCEscope fährt von Ort zu Ort und sammelt verschiedene Tänze. Das sind auch Tänze, die wenig im Theater gezeigt werden.",
+                "kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das kaleiDANCEscope auf verschiedenen Markt-Plätzen zu sehen war. Außerdem haben should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet.",
+            ],
+            title_en: "kaleiDANCEscope (asphalt Edition) (2022)",
+            description_en:
+                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
+            description_long_en: [
                 "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze. In einem umgebauten Wohn-Wagen kann man sich verschiedene Tänze wünschen. Dafür geht man in den Wohn-Wagen hinein. Die Gäste und die Performer*innen sind in dem Wagen immer zu zweit allein. Was getanzt wird, entscheiden die Gäste. Die Performer*innen haben alle unterschiedliche Hintergründe: manche kommen aus dem zeitgenössischen Tanz, andere aus dem klassischen Tanz und dann gibt es auch welche, die lokale Tänze aufführen. Eine Performance dauert zwischen 3 und 7 Minuten. Es ist eine persönliche Begegnung in einem öffentlichen Raum, weil der Wohn-Wagen überall aufgestellt werden kann. Das kaleiDANCEscope fährt von Ort zu Ort und sammelt verschiedene Tänze. Das sind auch Tänze, die wenig im Theater gezeigt werden.",
                 "kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das kaleiDANCEscope auf verschiedenen Markt-Plätzen zu sehen war. Außerdem haben should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet.",
             ],
             links: [
                 {
                     link: "",
-                    link_text:
+                    link_text_de:
+                        '"Die Tanzwunschmaschine ist eine begehbare Schatzkiste. Darin funkelt es ganz wunderbar. Wer sie wieder verlässt, lächelt ein vergnügliches Ich-weiß-da-was-Lächeln, das man sofort stibitzen möchte. Es ist eben schon ein bisschen magisch, was sich da als Premiere in dem lavendelblauen Wohnwagen auf dem Gertrudismarkt in Eller abspielt."',
+                    link_text_en:
                         '"Die Tanzwunschmaschine ist eine begehbare Schatzkiste. Darin funkelt es ganz wunderbar. Wer sie wieder verlässt, lächelt ein vergnügliches Ich-weiß-da-was-Lächeln, das man sofort stibitzen möchte. Es ist eben schon ein bisschen magisch, was sich da als Premiere in dem lavendelblauen Wohnwagen auf dem Gertrudismarkt in Eller abspielt."',
                 },
                 {
                     link: "https://rp-online.de/kultur/kaleidancescope-setzt-musikwuensche-in-tanz-um_aid-72586861",
-                    link_text:
+                    link_text_de:
+                        "Glücksmomente in der Disco-Kugel (Sema Kouschkerian, RP Online, 08.07.2022)",
+                    link_text_en:
                         "Glücksmomente in der Disco-Kugel (Sema Kouschkerian, RP Online, 08.07.2022)",
                 },
                 {
                     link: "https://www.theycallitkleinparis.de/2022/07/05/tuemay-kilincel-cornelius-schaper-im-interview-taenze-zum-preis-einer-tasse-kaffee/",
-                    link_text:
+                    link_text_de:
+                        "Tümay Kılınçel & Cornelius Schaper im Interview – „Tänze zum Preis einer Tasse Kaffee“ (Alexandra Wehrmann, theycallitkleinparis, 05.07.2022)",
+                    link_text_en:
                         "Tümay Kılınçel & Cornelius Schaper im Interview – „Tänze zum Preis einer Tasse Kaffee“ (Alexandra Wehrmann, theycallitkleinparis, 05.07.2022)",
                 },
                 {
                     link: "https://www.asphalt-festival.de/events/2022/kaleidancescope/",
-                    link_text: "kaleiDANCEscope beim asphalt Festival",
+                    link_text_de: "kaleiDANCEscope beim asphalt Festival",
+                    link_text_en: "kaleiDANCEscope beim asphalt Festival",
                 },
                 {
                     link: "https://vimeo.com/showcase/9917103/video/761536023#t=142s",
-                    link_text: "Video kaleiDANCEscope (asphalt Edition)",
+                    link_text_de: "Video kaleiDANCEscope (asphalt Edition)",
+                    link_text_en: "Video kaleiDANCEscope (asphalt Edition)",
                 },
             ],
             dates: [
@@ -67,83 +82,119 @@ export default function Works({ locale }) {
             ],
             main_img_src: "/works/images/kds_gk_cover.jpg",
             images: [
-                { src: "/works/images/kds_gk_01.jpg", alt: "" },
-                { src: "/works/images/kds_gk_02.jpg", alt: "" },
-                { src: "/works/images/kds_gk_03.jpg", alt: "" },
-                { src: "/works/images/kds_gk_04.jpg", alt: "" },
-                { src: "/works/images/kds_gk_05.jpg", alt: "" },
-                { src: "/works/images/kds_gk_06.jpg", alt: "" },
-                { src: "/works/images/kds_gk_07.jpg", alt: "" },
-                { src: "/works/images/kds_gk_09.jpg", alt: "" },
-                { src: "/works/images/kds_gk_10.jpg", alt: "" },
-                { src: "/works/images/kds_gk_11.jpg", alt: "" },
-                { src: "/works/images/kds_gk_08.jpg", alt: "" },
-                { src: "/works/images/kds_gk_12.jpg", alt: "" },
+                { src: "/works/images/kds_gk_01.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_02.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_03.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_04.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_05.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_06.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_07.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_09.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_10.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_11.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_08.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/kds_gk_12.jpg", alt_de: "", alt_en: "" },
             ],
             credits: [
                 {
-                    role: "Künstlerische Leitung, Choreografie, Performance",
-                    name: "Tümay Kılınçel",
+                    role_de: "Künstlerische Leitung, Choreografie, Performance",
+                    role_en: "Künstlerische Leitung, Choreografie, Performance",
+                    name_de: "Tümay Kılınçel",
+                    name_en: "Tümay Kılınçel",
                 },
                 {
-                    role: "Künstlerische Leitung, Video",
-                    name: "Cornelius Schaper",
+                    role_de: "Künstlerische Leitung, Video",
+                    role_en: "Künstlerische Leitung, Video",
+                    name_de: "Cornelius Schaper",
+                    name_en: "Cornelius Schaper",
                 },
                 {
-                    role: "Choreografische Leitung, Performance",
-                    name: "Jungyun Bae",
+                    role_de: "Choreografische Leitung, Performance",
+                    role_en: "Choreografische Leitung, Performance",
+                    name_de: "Jungyun Bae",
+                    name_en: "Jungyun Bae",
                 },
                 {
-                    role: "Co-Choreografie, Performance",
-                    name: "Juan Urbina",
+                    role_de: "Co-Choreografie, Performance",
+                    role_en: "Co-Choreografie, Performance",
+                    name_de: "Juan Urbina",
+                    name_en: "Juan Urbina",
                 },
                 {
-                    role: "Co-Choreografie",
-                    name: "Ayda El Fassi El Fehri, Kübra Sekin",
+                    role_de: "Co-Choreografie",
+                    role_en: "Co-Choreografie",
+                    name_de: "Ayda El Fassi El Fehri, Kübra Sekin",
+                    name_en: "Ayda El Fassi El Fehri, Kübra Sekin",
                 },
                 {
-                    role: "lokale Co-Choreografie, Performance",
-                    name: "Kim Gorol, Evgenia Tarutin, Manis Sjahroeddin",
+                    role_de: "lokale Co-Choreografie, Performance",
+                    role_en: "lokale Co-Choreografie, Performance",
+                    name_de: "Kim Gorol, Evgenia Tarutin, Manis Sjahroeddin",
+                    name_en: "Kim Gorol, Evgenia Tarutin, Manis Sjahroeddin",
                 },
                 {
-                    role: "Publikum-Betreuung, Performance",
-                    name: "Alina Rohde",
+                    role_de: "Publikum-Betreuung, Performance",
+                    role_en: "Publikum-Betreuung, Performance",
+                    name_de: "Alina Rohde",
+                    name_en: "Alina Rohde",
                 },
                 {
-                    role: "Bühnenbild",
-                    name: "Fivos Theodosakis",
+                    role_de: "Bühnenbild",
+                    role_en: "Bühnenbild",
+                    name_de: "Fivos Theodosakis",
+                    name_en: "Fivos Theodosakis",
                 },
                 {
-                    role: "Lektorat, Übersetzung",
-                    name: "Annika Restin",
+                    role_de: "Lektorat, Übersetzung",
+                    role_en: "Lektorat, Übersetzung",
+                    name_de: "Annika Restin",
+                    name_en: "Annika Restin",
                 },
                 {
-                    role: "DJ-Set",
-                    name: "Monita Wagma",
+                    role_de: "DJ-Set",
+                    role_en: "DJ-Set",
+                    name_de: "Monita Wagma",
+                    name_en: "Monita Wagma",
                 },
                 {
-                    role: "Illustration",
-                    name: "Christian Wischnewski",
+                    role_de: "Illustration",
+                    role_en: "Illustration",
+                    name_de: "Christian Wischnewski",
+                    name_en: "Christian Wischnewski",
                 },
                 {
-                    role: "technische Unterstützung",
-                    name: "David Schnaegelberger",
+                    role_de: "technische Unterstützung",
+                    role_en: "technische Unterstützung",
+                    name_de: "David Schnaegelberger",
+                    name_en: "David Schnaegelberger",
                 },
                 {
-                    role: "Produktionsleitung",
-                    name: "Laureen Laser, Alina Rohde",
+                    role_de: "Produktionsleitung",
+                    role_en: "Produktionsleitung",
+                    name_de: "Laureen Laser, Alina Rohde",
+                    name_en: "Laureen Laser, Alina Rohde",
                 },
                 {
-                    role: "Produktionsassistenz",
-                    name: "Rui Wu",
+                    role_de: "Produktionsassistenz",
+                    role_en: "Produktionsassistenz",
+                    name_de: "Rui Wu",
+                    name_en: "Rui Wu",
                 },
                 {
-                    role: "Vielen Dank an",
-                    name: "Aljoscha Gößling, Rouwe Hahn, Konrad Jesdinsky, Milena Mönch, Leander Ripchinsky, Emmanuel Roch, Ayhan Toprak, Nele Warthemann, Jugendhaus Frankfurter Berg Frankfurt, Ateliergemeinschaft ES365 Düsseldorf.",
+                    role_de: "Vielen Dank an",
+                    role_en: "Vielen Dank an",
+                    name_de:
+                        "Aljoscha Gößling, Rouwe Hahn, Konrad Jesdinsky, Milena Mönch, Leander Ripchinsky, Emmanuel Roch, Ayhan Toprak, Nele Warthemann, Jugendhaus Frankfurter Berg Frankfurt, Ateliergemeinschaft ES365 Düsseldorf.",
+                    name_en:
+                        "Aljoscha Gößling, Rouwe Hahn, Konrad Jesdinsky, Milena Mönch, Leander Ripchinsky, Emmanuel Roch, Ayhan Toprak, Nele Warthemann, Jugendhaus Frankfurter Berg Frankfurt, Ateliergemeinschaft ES365 Düsseldorf.",
                 },
                 {
-                    role: "Eine Produktion von",
-                    name: "should-I-know in Koproduktion mit dem asphalt Festival und dem FFT Düsseldorf, gefördert vom NRW Landesbüro Freie Darstellende Künste, vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur und Medien im Rahmen von NEUSTART KULTUR und vom Ministerium für Kultur und Wissenschaft des Landes NRW – regionale Kulturpolitik NRW (RKP) im Rahmen des Projektes STADT DER FREUDE.",
+                    role_de: "Eine Produktion von",
+                    role_en: "Eine Produktion von",
+                    name_de:
+                        "should-I-know in Koproduktion mit dem asphalt Festival und dem FFT Düsseldorf, gefördert vom NRW Landesbüro Freie Darstellende Künste, vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur und Medien im Rahmen von NEUSTART KULTUR und vom Ministerium für Kultur und Wissenschaft des Landes NRW – regionale Kulturpolitik NRW (RKP) im Rahmen des Projektes STADT DER FREUDE.",
+                    name_en:
+                        "should-I-know in Koproduktion mit dem asphalt Festival und dem FFT Düsseldorf, gefördert vom NRW Landesbüro Freie Darstellende Künste, vom Fonds Darstellende Künste aus Mitteln der Beauftragten der Bundesregierung für Kultur und Medien im Rahmen von NEUSTART KULTUR und vom Ministerium für Kultur und Wissenschaft des Landes NRW – regionale Kulturpolitik NRW (RKP) im Rahmen des Projektes STADT DER FREUDE.",
                 },
             ],
         },
@@ -169,7 +220,11 @@ export default function Works({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location={locale.works.details} nav={locale.nav} />
+            <Header
+                location={locale.works.details}
+                nav={locale.nav}
+                lang={locale.lang}
+            />
             <main>
                 <div className="spacer_100"></div>
                 <div className="main_image_container">
@@ -185,15 +240,15 @@ export default function Works({ locale }) {
                 <div className="spacer_100"></div>
                 <div className="works_main">
                     <div className="work_details">
-                        <h2>{works[0].title}</h2>
-                        {works[0].description_long ? (
-                            works[0].description_long.map(
+                        <h2>{works[0][`title${locale.lang}`]}</h2>
+                        {works[0][`description_long${locale.lang}`] ? (
+                            works[0][`description_long${locale.lang}`].map(
                                 (paragraph, index) => (
                                     <p key={index}>{paragraph}</p>
                                 )
                             )
                         ) : (
-                            <p>{works[0].description}</p>
+                            <p>{works[0][`description${locale.lang}`]}</p>
                         )}
                         {works[0].links && (
                             <div className="work_details">
@@ -207,10 +262,22 @@ export default function Works({ locale }) {
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
-                                                <p>{link.link_text}</p>
+                                                <p>
+                                                    {
+                                                        link[
+                                                            `link_text${locale.lang}`
+                                                        ]
+                                                    }
+                                                </p>
                                             </a>
                                         ) : (
-                                            <p>{link.link_text}</p>
+                                            <p>
+                                                {
+                                                    link[
+                                                        `link_text${locale.lang}`
+                                                    ]
+                                                }
+                                            </p>
                                         )}
                                     </div>
                                 ))}
@@ -242,7 +309,7 @@ export default function Works({ locale }) {
                                 <Image
                                     className="grid_image"
                                     src={image.src}
-                                    alt={image.alt}
+                                    alt={image[`alt${locale.lang}`]}
                                     fill
                                     style={{
                                         objectFit: "cover",
@@ -265,6 +332,7 @@ export default function Works({ locale }) {
                             <LightBox
                                 images={works[0].images}
                                 selectedIndex={selectedImage}
+                                locale={locale}
                             />
                         </div>
                     )}
@@ -283,10 +351,10 @@ export default function Works({ locale }) {
                                             className="credits_list_item"
                                         >
                                             <p className="credit_name">
-                                                {credit.role}:
+                                                {credit[`role${locale.lang}`]}:
                                             </p>
                                             <p className="credit_person">
-                                                {credit.name}
+                                                {credit[`name${locale.lang}`]}
                                             </p>
                                         </div>
                                         <div className="line"></div>

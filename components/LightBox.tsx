@@ -3,7 +3,7 @@ import React from "react";
 
 import Carousel from "react-bootstrap/Carousel";
 
-function LightBox({ images, selectedIndex }) {
+function LightBox({ images, selectedIndex, locale }) {
     return (
         <>
             <Carousel
@@ -18,7 +18,7 @@ function LightBox({ images, selectedIndex }) {
                     <Carousel.Item key={index}>
                         <div className="slider_image_wrapper">
                             <Image
-                                alt={image.alt}
+                                alt={image[`alt${locale.lang}`]}
                                 src={image.src}
                                 fill
                                 style={{

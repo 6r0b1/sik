@@ -132,6 +132,22 @@ p {
     transition: var(--link-transition);
 }
 
+.language_link {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-right: 5px;
+    color: #fff;
+    transition: var(--link-transition);
+}
+
+.language_link:hover {
+    color: var(--accent-01);
+    transition: var(--link-transition);
+}
+
 .social_links_container {
     display: flex;
     column-gap: 10px;

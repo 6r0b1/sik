@@ -1,13 +1,15 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import React from "react";
 import { useState, useEffect } from "react";
 
 import SocialMedia from "./SocialMedia";
 
-function Header({ location, nav }) {
+function Header({ location, nav, lang }) {
     const [menuState, setMenuState] = useState("_closed");
     const [navBackground, setNavBackground] = useState("_transparent");
+    const { asPath } = useRouter();
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -104,21 +106,23 @@ function Header({ location, nav }) {
                             </div>
                             <div className="additional_nav">
                                 <div>
-                                    {/* <Link
-                                        className="additional_nav_link"
-                                        id="english-language"
-                                        href="/einfache-sprache"
-                                    >
-                                        en
-                                    </Link>{" "}
-                                    |{" "}
-                                    <Link
-                                        className="additional_nav_link"
-                                        id="deutsche-sprache"
-                                        href="/einfache-sprache"
-                                    >
-                                        de
-                                    </Link>{" "} */}
+                                    {lang === "_de" ? (
+                                        <Link
+                                            href={`${asPath}`}
+                                            locale="en_GB"
+                                            className="additional_nav_link"
+                                        >
+                                            English
+                                        </Link>
+                                    ) : (
+                                        <Link
+                                            href={`${asPath}`}
+                                            locale="de_DE"
+                                            className="additional_nav_link"
+                                        >
+                                            Deutsch
+                                        </Link>
+                                    )}
                                 </div>
                                 <SocialMedia />
                             </div>

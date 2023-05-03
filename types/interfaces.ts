@@ -1,8 +1,11 @@
 export interface IWork {
     id: number;
-    title: string;
-    description: string;
-    description_long?: string[];
+    title_de: string;
+    description_de: string;
+    description_long_de?: string[];
+    title_en: string;
+    description_en: string;
+    description_long_en?: string[];
     links?: ILinks[];
     dates?: IDates[];
     main_img_src?: string;
@@ -12,7 +15,8 @@ export interface IWork {
 
 export interface ILinks {
     link: string;
-    link_text: string;
+    link_text_de: string;
+    link_text_en: string;
 }
 
 export interface IDates {
@@ -23,10 +27,13 @@ export interface IDates {
 
 export interface IImages {
     src: string;
-    alt: string;
+    alt_de: string;
+    alt_en: string;
 }
 
 export interface ICredits {
-    role: string;
-    name: string;
+    role_de: string;
+    role_en: string;
+    name_de: string;
+    name_en: string;
 }

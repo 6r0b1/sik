@@ -14,13 +14,13 @@ export default function About({ locale }) {
     const [modalState, setModalState] = useState("_hidden");
     const [selectedImage, setSelectedImage] = useState(0);
     const images: IImages[] = [
-        { src: "/statics/about_01.jpg", alt: "" },
-        { src: "/statics/about_02.jpg", alt: "" },
-        { src: "/statics/about_03.jpg", alt: "" },
-        { src: "/statics/about_04.jpg", alt: "" },
-        { src: "/statics/about_05.jpg", alt: "" },
-        { src: "/statics/about_06.jpg", alt: "" },
-        { src: "/statics/about_07.jpg", alt: "" },
+        { src: "/statics/about_01.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_02.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_03.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_04.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_05.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_06.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_07.jpg", alt_de: "", alt_en: "" },
     ];
     function openModal(index) {
         setSelectedImage(index);
@@ -43,7 +43,11 @@ export default function About({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location={locale.about.title} nav={locale.nav} />
+            <Header
+                location={locale.about.title}
+                nav={locale.nav}
+                lang={locale.lang}
+            />
             <main>
                 <div className="spacer_100"></div>
                 <div className="main_image_container">
@@ -86,7 +90,7 @@ export default function About({ locale }) {
                             <Image
                                 className="grid_image"
                                 src={image.src}
-                                alt={image.alt}
+                                alt={image[`alt${locale.lang}`]}
                                 fill
                                 style={{
                                     objectFit: "cover",
@@ -109,6 +113,7 @@ export default function About({ locale }) {
                             <LightBox
                                 images={images}
                                 selectedIndex={selectedImage}
+                                locale={locale}
                             />
                         </div>
                     )}

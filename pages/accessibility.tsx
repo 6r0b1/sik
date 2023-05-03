@@ -24,6 +24,7 @@ export default function Accessibility({ locale }) {
                 <Header
                     location={locale.accessibility.title}
                     nav={locale.nav}
+                    lang={locale.lang}
                 />
 
                 <div className="spacer_50_percent"></div>

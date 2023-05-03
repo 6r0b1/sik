@@ -21,12 +21,11 @@ export default function Home({ locale }) {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <main>
-                <Header location="" nav={locale.nav} />
-                {/* <img
-                    className="hero_background"
-                    src="/statics/hero.jpg"
-                    alt=""
-                /> */}
+                <Header
+                    // location={locale.works.details}
+                    nav={locale.nav}
+                    lang={locale.lang}
+                />
                 <video
                     className="hero_background"
                     src="/statics/backdrop_01.mov"

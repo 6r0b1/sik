@@ -11,20 +11,29 @@ export default function Works({ locale }) {
     const works: IWork[] = [
         {
             id: 1,
-            title: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
-            description:
+            title_de: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
+            description_de:
+                "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
+            title_en: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
+            description_en:
                 "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
         },
         {
             id: 2,
-            title: "kaleiDANCEscope (asphalt Edition) (2022)",
-            description:
+            title_de: "kaleiDANCEscope (asphalt Edition) (2022)",
+            description_de:
+                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
+            title_en: "kaleiDANCEscope (asphalt Edition) (2022)",
+            description_en:
                 "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
         },
         {
             id: 3,
-            title: "ohne Titel (2021)",
-            description:
+            title_de: "ohne Titel (2021)",
+            description_de:
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+            title_en: "ohne Titel (2021)",
+            description_en:
                 "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
         },
     ];
@@ -42,7 +51,11 @@ export default function Works({ locale }) {
                 />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-            <Header location={locale.works.title} nav={locale.nav} />
+            <Header
+                location={locale.works.title}
+                nav={locale.nav}
+                lang={locale.lang}
+            />
             <main>
                 <div className="spacer_50_percent"></div>
                 <div className="works_list">
@@ -52,9 +65,9 @@ export default function Works({ locale }) {
                                 className="work_link"
                                 href={`/works/${work.id}`}
                             >
-                                {work.title}
+                                {work[`title${locale.lang}`]}
                             </Link>
-                            <p>{work.description}</p>
+                            <p>{work[`description${locale.lang}`]}</p>
                         </div>
                     ))}
                 </div>
