@@ -10,18 +10,10 @@ import LightBox from "../components/LightBox";
 
 import { IImages } from "@/types/interfaces";
 
-export default function About({ locale }) {
+export default function About({ locale, images }) {
     const [modalState, setModalState] = useState("_hidden");
     const [selectedImage, setSelectedImage] = useState(0);
-    const images: IImages[] = [
-        { src: "/statics/about_01.jpg", alt_de: "", alt_en: "" },
-        { src: "/statics/about_02.jpg", alt_de: "", alt_en: "" },
-        { src: "/statics/about_03.jpg", alt_de: "", alt_en: "" },
-        { src: "/statics/about_04.jpg", alt_de: "", alt_en: "" },
-        { src: "/statics/about_05.jpg", alt_de: "", alt_en: "" },
-        { src: "/statics/about_06.jpg", alt_de: "", alt_en: "" },
-        { src: "/statics/about_07.jpg", alt_de: "", alt_en: "" },
-    ];
+
     function openModal(index) {
         setSelectedImage(index);
         setModalState("_shown");
@@ -126,9 +118,19 @@ export default function About({ locale }) {
 }
 
 export function getStaticProps({ locale }) {
+    const images: IImages[] = [
+        { src: "/statics/about_01.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_02.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_03.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_04.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_05.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_06.jpg", alt_de: "", alt_en: "" },
+        { src: "/statics/about_07.jpg", alt_de: "", alt_en: "" },
+    ];
     return {
         props: {
             locale: require(`../locales/${locale}.json`),
+            images: images,
         },
     };
 }

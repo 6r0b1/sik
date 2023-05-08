@@ -7,36 +7,7 @@ import Footer from "../../components/Footer";
 
 import { IWork } from "@/types/interfaces";
 
-export default function Works({ locale }) {
-    const works: IWork[] = [
-        {
-            id: 1,
-            title_de: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
-            description_de:
-                "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
-            title_en: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
-            description_en:
-                "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
-        },
-        {
-            id: 2,
-            title_de: "kaleiDANCEscope (asphalt Edition) (2022)",
-            description_de:
-                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
-            title_en: "kaleiDANCEscope (asphalt Edition) (2022)",
-            description_en:
-                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
-        },
-        {
-            id: 3,
-            title_de: "ohne Titel (2021)",
-            description_de:
-                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
-            title_en: "ohne Titel (2021)",
-            description_en:
-                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
-        },
-    ];
+export default function Works({ locale, works }) {
     return (
         <>
             <Head>
@@ -79,9 +50,39 @@ export default function Works({ locale }) {
 }
 
 export function getStaticProps({ locale }) {
+    const works: IWork[] = [
+        {
+            id: 1,
+            title_de: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
+            description_de:
+                "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
+            title_en: "kaleiDANCEscope (Grenzenlos Kultur Edition) (2022)",
+            description_en:
+                "kaleiDANCEscope (Grenzenlos Kultur Edition) ist eine Musik-Box für Tänze. kaleiDANCEscope (Grenzenlos Kultur Edition) hat in Mainz während des Grenzenlos Kultur Festivals stattgefunden. Das Besondere in Mainz war, dass es im kaleiDANCEscope Tänze im Dunkeln für blinde Menschen gab.",
+        },
+        {
+            id: 2,
+            title_de: "kaleiDANCEscope (asphalt Edition) (2022)",
+            description_de:
+                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
+            title_en: "kaleiDANCEscope (asphalt Edition) (2022)",
+            description_en:
+                "kaleiDANCEscope (asphalt Edition) ist eine Musik-Box für Tänze.. kaleiDANCEscope (asphalt Edition) wurde in Düsseldorf auf dem asphalt Festival gezeigt. Das Besondere war, dass das should-I-know lokale Tänzer*innen eingeladen und mit ihnen zusammengearbeitet haben.",
+        },
+        {
+            id: 3,
+            title_de: "ohne Titel (2021)",
+            description_de:
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+            title_en: "ohne Titel (2021)",
+            description_en:
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+        },
+    ];
     return {
         props: {
             locale: require(`../../locales/${locale}.json`),
+            works: works,
         },
     };
 }

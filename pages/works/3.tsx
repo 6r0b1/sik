@@ -10,83 +10,10 @@ import LightBox from "../../components/LightBox";
 
 import { IWork } from "@/types/interfaces";
 
-export default function Works({ locale }) {
+export default function Works({ locale, works }) {
     const [modalState, setModalState] = useState("_hidden");
     const [selectedImage, setSelectedImage] = useState(0);
-    const works: IWork[] = [
-        {
-            id: 1,
-            title_de: "ohne Titel (2021)",
-            description_de:
-                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
-            description_long_de: [
-                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
-                "Es ging bei der Residenz darum, in den Schul-Räumen Störungen zu erforschen. Dazu hat should-I-know spiegelndes Material benutzt und in der 1. Etage von der Schule eine Nische mit Rettungsfolie ausgekleidet. In der 2. Etage wurden die Glas-Türen mit Spiegel-Karton bestückt. Die Aktionen hatten keinen Titel, aber alle, die mit der Schule zu tun haben, konnten sich eigene Namen dafür ausdenken.",
-                "Es ist herausgekommen, dass sich der gewohnte Weg der Menschen in der Schule durch die „spiegelnden Störungen“ im Schul-Gebäude verändert. Die Körper springen, drehen und tanzen im Raum. Sie reflektieren mit der Spiegelung und man sieht sich selbst und andere neu.",
-            ],
-            title_en: "ohne Titel (2021)",
-            description_en:
-                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
-            description_long_en: [
-                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
-                "Es ging bei der Residenz darum, in den Schul-Räumen Störungen zu erforschen. Dazu hat should-I-know spiegelndes Material benutzt und in der 1. Etage von der Schule eine Nische mit Rettungsfolie ausgekleidet. In der 2. Etage wurden die Glas-Türen mit Spiegel-Karton bestückt. Die Aktionen hatten keinen Titel, aber alle, die mit der Schule zu tun haben, konnten sich eigene Namen dafür ausdenken.",
-                "Es ist herausgekommen, dass sich der gewohnte Weg der Menschen in der Schule durch die „spiegelnden Störungen“ im Schul-Gebäude verändert. Die Körper springen, drehen und tanzen im Raum. Sie reflektieren mit der Spiegelung und man sieht sich selbst und andere neu.",
-            ],
-            links: [
-                {
-                    link: "https://tanzplattformrheinmain.de/de/professionell-tanzen/residenzen/residenz-an-schulen/",
-                    link_text_de:
-                        "Herder-Residenz bei der Tanzplattform Rhein-Main",
-                    link_text_en:
-                        "Herder-Residenz bei der Tanzplattform Rhein-Main",
-                },
-            ],
-            dates: [
-                {
-                    date: "Oktober, November 2021",
-                    time: "tägl.",
-                    venue: "IGS Herder, Frankfurt am Main",
-                },
-            ],
-            main_img_src: "/works/images/hmr_03.jpg",
-            images: [
-                { src: "/works/images/hmr_01.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_02.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_03.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_04.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_05.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_06.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_07.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_08.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_09.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_10.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_11.jpg", alt_de: "", alt_en: "" },
-                { src: "/works/images/hmr_12.jpg", alt_de: "", alt_en: "" },
-            ],
-            credits: [
-                {
-                    role_de: "Künstlerische Leitung",
-                    role_en: "Künstlerische Leitung",
-                    name_de: "Tümay Kılınçel",
-                    name_en: "Tümay Kılınçel",
-                },
-                {
-                    role_de: "Künstlerische Leitung",
-                    role_en: "Künstlerische Leitung",
-                    name_de: "Cornelius Schaper",
-                    name_en: "Cornelius Schaper",
-                },
-                {
-                    role_de: "InitiatorInnen & Förderung",
-                    role_en: "InitiatorInnen & Förderung",
-                    name_de:
-                        "Die Tanzplattform Rhein-Main, ein Projekt von Künstler*innenhaus Mousonturm und Hessischem Staatsballett, wird ermöglicht durch den Kulturfonds Frankfurt RheinMain und gefördert vom Kulturamt der Stadt Frankfurt am Main, dem Hessischen Ministerium für Wissenschaft und Kunst und der Stiftungsallianz [Aventis Foundation, BHF BANK Stiftung, Crespo Foundation, Hans Erich und Marie Elfriede Dotter-Stiftung, Dr. Marschner Stiftung, Stiftung Polytechnische Gesellschaft Frankfurt am Main].",
-                    name_en:
-                        "Die Tanzplattform Rhein-Main, ein Projekt von Künstler*innenhaus Mousonturm und Hessischem Staatsballett, wird ermöglicht durch den Kulturfonds Frankfurt RheinMain und gefördert vom Kulturamt der Stadt Frankfurt am Main, dem Hessischen Ministerium für Wissenschaft und Kunst und der Stiftungsallianz [Aventis Foundation, BHF BANK Stiftung, Crespo Foundation, Hans Erich und Marie Elfriede Dotter-Stiftung, Dr. Marschner Stiftung, Stiftung Polytechnische Gesellschaft Frankfurt am Main].",
-                },
-            ],
-        },
-    ];
+
     function openModal(index) {
         setSelectedImage(index);
         setModalState("_shown");
@@ -260,9 +187,84 @@ export default function Works({ locale }) {
 }
 
 export function getServerSideProps({ locale }) {
+    const works: IWork[] = [
+        {
+            id: 1,
+            title_de: "ohne Titel (2021)",
+            description_de:
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+            description_long_de: [
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+                "Es ging bei der Residenz darum, in den Schul-Räumen Störungen zu erforschen. Dazu hat should-I-know spiegelndes Material benutzt und in der 1. Etage von der Schule eine Nische mit Rettungsfolie ausgekleidet. In der 2. Etage wurden die Glas-Türen mit Spiegel-Karton bestückt. Die Aktionen hatten keinen Titel, aber alle, die mit der Schule zu tun haben, konnten sich eigene Namen dafür ausdenken.",
+                "Es ist herausgekommen, dass sich der gewohnte Weg der Menschen in der Schule durch die „spiegelnden Störungen“ im Schul-Gebäude verändert. Die Körper springen, drehen und tanzen im Raum. Sie reflektieren mit der Spiegelung und man sieht sich selbst und andere neu.",
+            ],
+            title_en: "ohne Titel (2021)",
+            description_en:
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+            description_long_en: [
+                "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
+                "Es ging bei der Residenz darum, in den Schul-Räumen Störungen zu erforschen. Dazu hat should-I-know spiegelndes Material benutzt und in der 1. Etage von der Schule eine Nische mit Rettungsfolie ausgekleidet. In der 2. Etage wurden die Glas-Türen mit Spiegel-Karton bestückt. Die Aktionen hatten keinen Titel, aber alle, die mit der Schule zu tun haben, konnten sich eigene Namen dafür ausdenken.",
+                "Es ist herausgekommen, dass sich der gewohnte Weg der Menschen in der Schule durch die „spiegelnden Störungen“ im Schul-Gebäude verändert. Die Körper springen, drehen und tanzen im Raum. Sie reflektieren mit der Spiegelung und man sieht sich selbst und andere neu.",
+            ],
+            links: [
+                {
+                    link: "https://tanzplattformrheinmain.de/de/professionell-tanzen/residenzen/residenz-an-schulen/",
+                    link_text_de:
+                        "Herder-Residenz bei der Tanzplattform Rhein-Main",
+                    link_text_en:
+                        "Herder-Residenz bei der Tanzplattform Rhein-Main",
+                },
+            ],
+            dates: [
+                {
+                    date: "Oktober, November 2021",
+                    time: "tägl.",
+                    venue: "IGS Herder, Frankfurt am Main",
+                },
+            ],
+            main_img_src: "/works/images/hmr_03.jpg",
+            images: [
+                { src: "/works/images/hmr_01.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_02.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_03.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_04.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_05.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_06.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_07.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_08.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_09.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_10.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_11.jpg", alt_de: "", alt_en: "" },
+                { src: "/works/images/hmr_12.jpg", alt_de: "", alt_en: "" },
+            ],
+            credits: [
+                {
+                    role_de: "Künstlerische Leitung",
+                    role_en: "Künstlerische Leitung",
+                    name_de: "Tümay Kılınçel",
+                    name_en: "Tümay Kılınçel",
+                },
+                {
+                    role_de: "Künstlerische Leitung",
+                    role_en: "Künstlerische Leitung",
+                    name_de: "Cornelius Schaper",
+                    name_en: "Cornelius Schaper",
+                },
+                {
+                    role_de: "InitiatorInnen & Förderung",
+                    role_en: "InitiatorInnen & Förderung",
+                    name_de:
+                        "Die Tanzplattform Rhein-Main, ein Projekt von Künstler*innenhaus Mousonturm und Hessischem Staatsballett, wird ermöglicht durch den Kulturfonds Frankfurt RheinMain und gefördert vom Kulturamt der Stadt Frankfurt am Main, dem Hessischen Ministerium für Wissenschaft und Kunst und der Stiftungsallianz [Aventis Foundation, BHF BANK Stiftung, Crespo Foundation, Hans Erich und Marie Elfriede Dotter-Stiftung, Dr. Marschner Stiftung, Stiftung Polytechnische Gesellschaft Frankfurt am Main].",
+                    name_en:
+                        "Die Tanzplattform Rhein-Main, ein Projekt von Künstler*innenhaus Mousonturm und Hessischem Staatsballett, wird ermöglicht durch den Kulturfonds Frankfurt RheinMain und gefördert vom Kulturamt der Stadt Frankfurt am Main, dem Hessischen Ministerium für Wissenschaft und Kunst und der Stiftungsallianz [Aventis Foundation, BHF BANK Stiftung, Crespo Foundation, Hans Erich und Marie Elfriede Dotter-Stiftung, Dr. Marschner Stiftung, Stiftung Polytechnische Gesellschaft Frankfurt am Main].",
+                },
+            ],
+        },
+    ];
     return {
         props: {
             locale: require(`../../locales/${locale}.json`),
+            works: works,
         },
     };
 }
