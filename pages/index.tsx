@@ -2,6 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 
+import { withSessionSsr } from "../lib/config/withSession";
+
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -21,11 +23,7 @@ export default function Home({ locale }) {
                 <link rel="icon" href="/favicon.svg" />
             </Head>
             <main>
-                <Header
-                    // location={locale.works.details}
-                    nav={locale.nav}
-                    lang={locale.lang}
-                />
+                <Header location="" nav={locale.nav} lang={locale.lang} />
                 <video
                     className="hero_background"
                     src="/statics/backdrop_01.mov"
@@ -57,3 +55,21 @@ export function getStaticProps({ locale }) {
         },
     };
 }
+
+// export const getServerSideProps = withSessionSsr(
+//     async ({ req, res, locale }) => {
+//         const user = req.session.user;
+
+//         if (!user) {
+//             return {
+//                 notFound: true,
+//             };
+//         }
+
+//         return {
+//             props: {
+//                 locale: require(`../locales/${locale}.json`),
+//             },
+//         };
+//     }
+// );

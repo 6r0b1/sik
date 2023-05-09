@@ -25,7 +25,10 @@
         "**/*.ts",
         "**/*.tsx",
         "components/Footer.tsx",
-        "src"
+        "src",
+        "lib/config/withSession.js",
+        "lib/config/iron-config.js",
+        "lib/config/iron-config.js"
     ],
     "exclude": ["node_modules"]
 }
