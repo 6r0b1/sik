@@ -1,101 +1,101 @@
 {
     "lang": "_en",
     "nav": {
-        "works": "Arbeiten",
-        "about": "Über",
-        "contact": "Kontakt",
-        "privacy": "Datenschutz",
-        "imprint": "Impressum",
-        "accessibility": "Barrierefreiheit",
-        "email_subject": "Kontaktanfrage von der Webseite"
+        "works": "works",
+        "about": "about",
+        "contact": "contact",
+        "privacy": "privacy",
+        "imprint": "imprint",
+        "accessibility": "accessibility",
+        "email_subject": "contact request from website"
     },
     "home": {},
     "works": {
-        "title": "Arbeiten",
-        "details": "Arbeiten | Details",
-        "links": "Presse und Links"
+        "title": "works",
+        "details": "works | details",
+        "links": "press and links"
     },
     "about": {
-        "title": "Über",
+        "title": "about",
         "text_01": [
-            "Tümay Kılınçel und Cornelius Schaper nennen sich zusammen should-I-know. Als Duo arbeiten sie gemeinsam an Projekten im Bereich von Tanz, Performance & Installation. Wichtig ist ihnen immer einen Bezug zum Raum und der Öffentlichkeit zu haben. Als should-I-know möchten sie mit ihren Arbeiten nicht nur im Theater zu sehen sein, sondern gehen auch zu den Menschen. Hier kann Austausch nochmal anders stattfinden – ganz direkt.",
-            "Das Duo should-I-know arbeitet seit vielen Jahren zusammen, manchmal auch mit anderen Künstler*innen. Sie arbeiten immer interdisziplinär. Das heißt, dass should-I-know sich mit verschiedenen Fragestellungen beschäftigt und nicht nur in einem Bereich arbeitet. Der gemeinsame Prozess ist wichtig, unterschiedliche Ansätze zentral. Das künstlerische Ergebnis fügt alle erforschten Themen-Teile zusammen und ist immer ortsspezifisch. Denn jedes Projekt bezieht sich genau auf den Ort, für den es bewusst gemacht wurde."
+            "Tümay Kılınçel and Cornelius Schaper call themselves should-I-know. As a duo they work together on projects in the field of dance, performance & installation. It is always important to them to have a relationship to the locality and the public. As should-I-know, they don't just want their work to be seen in the theatre, but also go out to the people. Here, exchange can take place in a different way – very directly.",
+            "The duo should-I-know has been working together for many years, sometimes with other artists. Their work is always interdisciplinary. This means that should-I-know deals with different questions and does not work in just one field. The joint process is important, different approaches central. The artistic result brings together all the explored thematic parts and is always site-specific. Because each project relates precisely to the place for which it was consciously made."
         ],
-        "contact": "Kontakt"
+        "contact": "contact"
     },
     "privacy": {
-        "title": "Datenschutzerklärung",
+        "title": "privacy policy",
         "preamble": [
-            "Verantwortlich im Sinne der Datenschutzgesetzes:",
+            "Responsible in the sense of the data protection act:",
             "should-I-know"
         ],
-        "subtitle_01": "Datenschutz",
+        "subtitle_01": "data protection",
         "text_01": [
-            "Als Webseitenbetreiber nehmen wir den Schutz aller persönlichen Daten sehr ernst. Alle personenbezogenen Informationen werden vertraulich und gemäß den gesetzlichen Vorschriften behandelt, wie in dieser Datenschutzerklärung erläutert.",
-            "Unserer Webseite kann selbstverständlich genutzt werden, ohne dass Sie persönliche Daten angeben. Wenn jedoch zu irgendeinem Zeitpunkt persönliche Daten wie z.B. Name, Adresse oder E-Mail abgefragt werden, wird dies auf freiwilliger Basis geschehen. Niemals werden von uns erhobene Daten ohne Ihre spezielle Genehmigung an Dritte weitergegeben.",
-            "Datenübertragung im Internet, wie zum Beispiel über E-Mail, kann immer Sicherheitslücken aufweisen. Der komplette Schutz der Daten ist im Internet nicht möglich."
+            "As a website operator, we take the protection of all personal data very seriously. All personal information is treated confidentially and in accordance with the legal requirements, as explained in this privacy policy.",
+            "Our website can of course be used without providing any personal information. However, if at any time personal data such as name, address or e-mail is requested, this will be done on a voluntary basis. Never will data collected by us be passed on to third parties without your specific permission.",
+            "Data transmission on the Internet, such as via e-mail, can always have security gaps. The complete protection of data is not possible on the Internet."
         ],
-        "subtitle_02": "Auskunft, Löschung, Sperrung",
+        "subtitle_02": "information, deletion, blocking",
         "text_02": [
-            "Zu jedem Zeitpunkt können Sie sich über die personenbezogenen Daten, deren Herkunft und Empfänger und den Nutzen der Datenverarbeitung informieren und unentgeltlich eine Korrektur, Sperrung oder Löschung dieser Daten verlangen. Bitte nutzen Sie dafür die im Impressum angegebenen Kontaktwege. Für weitere Fragen zum Thema stehen wir Ihnen ebenfalls jederzeit zur Verfügung."
+            "At any time, you can obtain information about the personal data, its origin and recipients and the benefits of data processing and request free of charge a correction, blocking or deletion of this data. Please use the contact channels indicated in the imprint for this purpose. We are also available at any time for further questions on this topic."
         ],
-        "subtitle_03": "Server-Log-Files",
+        "subtitle_03": "server log files",
         "text_03": [
-            "Der Seiten-Provider erhebt und speichert automatisch Daten in Server-Log Files, die von Ihrem Browser an uns übermittelt werden. Diese Daten enthalten:",
-            "– Browsertyp/ Browserversion",
-            "– Betriebssystem des Rechners",
-            "– Referrer URL",
-            "– Hostname des zugreifenden Rechners",
-            "– Uhrzeit der Serveranfrage",
-            "Diese Daten sind nicht personenbezogen. Es erfolgt keine Zusammenführung dieser Daten mit anderen Datenquellen. Wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden behalten wir uns das Recht vor, diese Daten nachträglich zu überprüfen."
+            "The site provider automatically collects and stores data in server log files that are transmitted to us by your browser. This data includes:",
+            "– browser type/ browser version",
+            "– operating system of the computer",
+            "– referrer URL",
+            "– host name of the accessing computer",
+            "– time of the server request",
+            "These data are not personal. This data is not merged with other data sources. If we become aware of concrete indications of illegal use, we reserve the right to check this data retrospectively."
         ],
-        "subtitle_04": "Cookies",
+        "subtitle_04": "cookies",
         "text_04": [
-            "Viele Internetseiten verwenden Cookies. Cookies sind unschädlich für Ihren Rechner und virenfrei. Sie dienen dazu, Internet-Angebote für die Besucher einer Webseite freundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Computer abgelegt werden und die Ihr Browser verwendet.",
-            "Wir verwenden in der Regel so genannte „Session-Cookies“. Diese werden nach Verlassen unserer Seite automatisch gelöscht. Andere Cookies bleiben auf Ihrem Computer gespeichert, bis Sie diese löschen. Diese Cookies helfen dabei, Ihren Rechner beim nächsten Besuch wiederzuerkennen.",
-            "Über die Browsereinstellungen können sie festlegen, dass Sie über neue Cookies informiert werden und Cookies jeweils annehmen müssen. Ebenso können Sie die Annahme von Cookies für bestimmte Fälle oder generell ausschließen oder das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Werden Cookies desaktiviert, kann die Funktionalität unserer Website eingeschränkt sein."
+            "Many Internet pages use cookies. Cookies are harmless to your computer and virus-free. They are used to make Internet offers friendlier, more effective and safer for visitors to a website. Cookies are small text files that are stored on your computer and used by your browser.",
+            "We usually use so-called \"session cookies\". These are automatically deleted after you leave our site. Other cookies remain stored on your computer until you delete them. These cookies help to recognize your computer on your next visit.",
+            "You can use your browser settings to specify that you are to be informed about new cookies and that you must accept cookies in each case. Likewise, you can exclude the acceptance of cookies for certain cases or generally or activate the automatic deletion of cookies when closing the browser. If cookies are deactivated, the functionality of our website may be limited."
         ],
-        "subtitle_05": "Änderung der Datenschutzbestimmungen",
+        "subtitle_05": "change of the data protection regulations",
         "text_05": [
-            "Unsere Datenschutzerklärung können in unregelmäßigen Abständen angepasst werden, damit sie den aktuellen rechtlichen Anforderungen entsprechen oder um Änderungen unserer Dienstleistungen umzusetzen, z. B. bei der Einfügung neuer Angebote. Für Ihren nächsten Besuch gilt dann automatisch die neue Datenschutzerklärung."
+            "Our privacy policy may be amended at irregular intervals to comply with current legal requirements or to implement changes to our services, e.g. when new offers are added. The new privacy policy will then automatically apply to your next visit."
         ],
-        "subtitle_06": "Kontakt zum Datenschutzmitarbeiter, zur Datenschutzmitarbeiterin",
+        "subtitle_06": "contacting the data protection officer",
         "text_06": [
-            "Für Fragen zum Datenschutz schicken Sie uns bitte eine Nachricht an mail@should-I-know.com mit dem Betreff „Datenschutz“."
+            "For questions regarding data protection, please send us a message to mail@should-I-know.com with the subject \"Data protection\"."
         ]
     },
     "imprint": {
-        "title": "Impressum",
+        "title": "imprint",
         "preamble": [
-            "Angaben gemäß § 5 TMG:",
+            "Information according to § 5 TMG:",
             "should-I-know",
-            "Vertreten durch:",
+            "Represented by:",
             "Tümay Kılınçel , Cornelius Schaper",
-            "Kontakt:",
+            "Contact:",
             "mail@should-I-know.com"
         ],
-        "subtitle_01": "Webdesign & Entwicklung:",
+        "subtitle_01": "Web design & development:",
         "text_01": ["Veit Hüter"],
-        "subtitle_02": "Texte, Lektorat, Übersetzung: ",
+        "subtitle_02": "Texts, editing, translation: ",
         "text_02": ["Annika Restin"],
-        "subtitle_03": "should-I-know sind: ",
+        "subtitle_03": "should-I-know are: ",
         "text_03": ["Tümay Kılınçel & Cornelius Schaper"],
-        "subtitle_04": "Förder*innen:",
+        "subtitle_04": "Sponsors:",
         "text_04": [
-            "Ministerium für Kultur und Wissenschaft desLandes NRW",
-            "NRW Landesbüro Freie Darstellende Künste"
+            "Ministry of Culture and Science of the State of North Rhine-​Westphalia",
+            "North Rhine-Westphalia State Office for the Independent Performing Arts"
         ]
     },
     "accessibility": {
-        "title": "Barrierefreiheit",
-        "subtitle_01": "Erklärung zur Barrierefreiheit",
+        "title": "accessibility",
+        "subtitle_01": "Accessibility Statement",
         "text_01": [
-            "Diese Erklärung zur Barrierefreiheit gilt für die Website www.should-I-know.com.",
-            "Wir sind bemüht, unsere Websites und mobilen Anwendungen möglichst barrierefrei zugänglich zu machen. Dennoch sind unsere Anwendungen nicht komplett barrierefrei.",
-            "Folgende Punkte haben wir versucht umzusetzen: Wir haben uns bei der Gestaltung der Texte an Einfacher Sprache orientiert. Videoinhalte werden mit Untertiteln angeboten und Bilder verfügen über eine Bildbeschreibung, außer sie sind dekorativ. Des weiteren wurde auch bei der farblichen Gestaltung versucht, möglichst gute Kontrastwerte zu erzeugen."
+            "This accessibility statement applies to the website www.should-I-know.com.",
+            "We strive to make our websites and mobile applications as accessible as possible. Nevertheless, our applications are not completely barrier-free.",
+            "We have tried to implement the following points: We have followed Simple Language in the design of the texts. Video content is offered with subtitles and images have an image description unless they are decorative. Furthermore, we also tried to create as good contrast values as possible in the color design."
         ],
-        "subtitle_02": "Barrieren melden sowie Informationen zur Barrierefreiheit dieser Website",
-        "text_02": "Wir sind bemüht, weiter daran zu arbeiten und die barrierefreie Zugänglichkeit zu verbessern. Wenn Sie uns bestehende Barrieren mitteilen möchten und/oder Vorschläge zu anderen Lösungen haben, freuen wir uns sehr über Ihr feedback. Nutzen sie dafür bitte folgende email-Adresse:",
-        "email_subject": "Feedback zur Barrierefreiheit"
+        "subtitle_02": "Reporting barriers and information about the accessibility of this website",
+        "text_02": "We are committed to continuing to work on and improve barrier-free accessibility. If you would like to report existing barriers and/or have suggestions for other solutions, we would appreciate your feedback. Please use the following email address:",
+        "email_subject": "Feedback on accessibility"
     }
 }
