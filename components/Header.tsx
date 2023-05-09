@@ -106,7 +106,7 @@ function Header({ location, nav, lang }) {
                             </div>
                             <div className="additional_nav">
                                 <div>
-                                    {lang === "_de" ? (
+                                    {/* {lang === "_de" ? (
                                         <Link
                                             href={`${asPath}`}
                                             locale="en_GB"
@@ -122,7 +122,7 @@ function Header({ location, nav, lang }) {
                                         >
                                             Deutsch
                                         </Link>
-                                    )}
+                                    )} */}
                                 </div>
                                 <SocialMedia />
                             </div>
