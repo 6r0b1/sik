@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 // imports from components
 import axios from "axios";
 // imports from clients/configs
-import { ironOptions } from "../../lib/config/iron-config";
 import { withSessionSsr } from "../../lib/config/withSession";
 
 function TLDR() {
