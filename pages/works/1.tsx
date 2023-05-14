@@ -71,7 +71,9 @@ export default function Works({ locale, works }) {
                                 {works[0].links.map((link, index) => (
                                     <div key={index} className="link_container">
                                         <div>
-                                            <p>{"->"}</p>
+                                            <p style={{ display: "block" }}>
+                                                {"->"}
+                                            </p>
                                         </div>
                                         {link.link !== "" ? (
                                             <a
