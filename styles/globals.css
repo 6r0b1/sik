@@ -452,7 +452,7 @@ p {
 }
 
 .indicator {
-    width: 20px;
+    display: block;
 }
 
 .image_grid {
