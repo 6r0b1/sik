@@ -70,7 +70,9 @@ export default function Works({ locale, works }) {
                                 <h2>{locale.works.links}</h2>
                                 {works[0].links.map((link, index) => (
                                     <div key={index} className="link_container">
-                                        <p>{"->"}</p>
+                                        <div>
+                                            <p>{"->"}</p>
+                                        </div>
                                         {link.link !== "" ? (
                                             <a
                                                 href={link.link}
