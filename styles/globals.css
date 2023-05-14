@@ -808,6 +808,7 @@ p {
     }
 
     .link_container {
+        display: flex;
         margin-left: 5px;
     }
 
