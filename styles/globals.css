@@ -809,6 +809,7 @@ p {
 
     .link_container {
         display: flex;
+        flex-wrap: nowrap;
         margin-left: 5px;
     }
 
