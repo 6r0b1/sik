@@ -2,7 +2,7 @@
     /* colors */
     --warm-black: #160c00;
     --accent-01: #00fff7;
-    --modal-bg: rgba(255, 255, 255, 0.9);
+    --modal-bg: rgba(0, 0, 0, 0.9);
     /* transitions */
     --menu-transition: all 0.4s ease-in-out;
     --link-transition: 190ms;
@@ -602,6 +602,36 @@ p {
     height: 50vh;
     /* width: 100%; */
 }
+
+/* media query dark mode */
+/* @media (prefers-color-scheme: dark) {
+    main {
+        background-color: var(--warm-black);
+    }
+    h1,
+    h2,
+    p,
+    a,
+    a:hover,
+    .work_link,
+    .footer_links,
+    .footer_p,
+    .credit_name,
+    .credit_person {
+        color: #fff;
+    }
+    h2,
+    a:hover,
+    .work_link:hover {
+        text-decoration-color: #fff;
+    }
+    .nav_wrapper_solid {
+        background-color: var(--warm-black);
+    }
+    .main_nav_link:hover {
+        color: var(--warm-black);
+    }
+} */
 
 @media screen and (max-width: 1400px) {
     h1 {

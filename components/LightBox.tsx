@@ -10,7 +10,7 @@ function LightBox({ images, selectedIndex, locale }) {
                 defaultActiveIndex={selectedIndex}
                 interval={null}
                 indicators={false}
-                variant="dark"
+                variant="light"
                 touch={true}
                 keyboard={true}
             >
