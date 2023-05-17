@@ -1,7 +1,7 @@
 :root {
     /* colors */
     --warm-black: #160c00;
-    --accent-01: #00fff7;
+    --accent-01: none;
     --modal-bg: rgba(0, 0, 0, 0.9);
     /* transitions */
     --menu-transition: all 0.4s ease-in-out;
@@ -608,7 +608,7 @@ p {
 }
 
 /* media query dark mode */
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
     main {
         background-color: var(--warm-black);
     }
@@ -635,7 +635,7 @@ p {
     .main_nav_link:hover {
         color: var(--warm-black);
     }
-} */
+}
 
 @media screen and (max-width: 1400px) {
     h1 {
