@@ -635,6 +635,9 @@ p {
     .main_nav_link:hover {
         color: var(--warm-black);
     }
+    .line {
+        background-color: #fff;
+    }
 }
 
 @media screen and (max-width: 1400px) {
