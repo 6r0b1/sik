@@ -12,6 +12,17 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>
 ) {
+    const data = {
+        title_de: "test",
+        description_de: "test",
+        title_en: "test",
+        description_en: "test",
+        main_image_src: "test.jpg",
+    };
+    const dbTest = await prismaClient.works.create({
+        data: data,
+    });
+    console.log(dbTest);
     // const dbTest: Works = await prismaClient.works.findMany();
     type worksWithImages = Prisma.WorksGetPayload<{
         include: {
