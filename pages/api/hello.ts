@@ -26,7 +26,7 @@ export default async function handler(
             work_images: true,
         },
     });
-    console.log(testQuery.work_images[0]);
+    console.log(testQuery);
 
     res.status(200).json({ name: "John Doe" });
 }
