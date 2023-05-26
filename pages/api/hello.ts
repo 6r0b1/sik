@@ -17,7 +17,7 @@ export default async function handler(
         description_de: "test",
         title_en: "test",
         description_en: "test",
-        main_image_src: "test.jpg",
+        main_img_src: "test.jpg",
     };
     const dbTest = await prismaClient.works.create({
         data: data,
