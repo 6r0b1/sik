@@ -8,7 +8,7 @@ export interface IWork {
     description_long_en?: string[];
     links?: ILinks[];
     dates?: IDates[];
-    main_img_src: string;
+    main_img_src?: string;
     images?: IImages[];
     credits?: ICredits[];
 }
