@@ -11,8 +11,54 @@ datasource db {
 }
 
 model Works {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  title     String   
-  description      String
+  id                    Int      @id @default(autoincrement())
+  createdAt             DateTime @default(now())
+  title_de              String   @default("")
+  description_de        String   @default("")
+  description_long_de   String?
+  title_en              String   @default("")
+  description_en        String   @default("")
+  description_long_en   String?
+  main_img_src          String   @default("default.jpg")
+  work_links            work_links[]
+  work_dates            work_dates[]
+  work_images           work_images[]
+  work_credits          work_credits[]
+}
+
+model work_links {
+  id            Int         @id @default(autoincrement())
+  link          String      @default("")
+  link_text_de  String      @default("")
+  link_text_en  String      @default("")
+  work_id       Int
+  work          Works @relation(fields: [work_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model work_dates {
+  id            Int         @id @default(autoincrement())
+  date          String      @default("")
+  time          String      @default("")
+  venue         String      @default("")
+  work_id       Int
+  work          Works @relation(fields: [work_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model work_images {
+  id            Int         @id @default(autoincrement())
+  src           String      @default("default.jpg")
+  alt_de        String      @default("")
+  alt_en        String      @default("")
+  work_id       Int
+  work          Works @relation(fields: [work_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model work_credits {
+  id            Int         @id @default(autoincrement())
+  role_de       String      @default("")
+  role_en       String      @default("")
+  name_de       String      @default("")
+  name_en       String      @default("")
+  work_id       Int
+  work          Works @relation(fields: [work_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 }
