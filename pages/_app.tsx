@@ -2,14 +2,18 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { NextIntlProvider } from "next-intl";
-import { AccentProvider } from "../context/accentColor";
+import { useEffect } from "react";
+
+import { setAccentColor } from "@/lib/ui/setAccentColor";
 
 export default function App({ Component, pageProps }: AppProps) {
+    useEffect(() => {
+        setAccentColor();
+    }, []);
+
     return (
-        <AccentProvider>
-            <NextIntlProvider messages={pageProps.messages}>
-                <Component {...pageProps} />
-            </NextIntlProvider>
-        </AccentProvider>
+        <NextIntlProvider messages={pageProps.messages}>
+            <Component {...pageProps} />
+        </NextIntlProvider>
     );
 }

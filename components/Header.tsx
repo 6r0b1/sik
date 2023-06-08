@@ -4,20 +4,12 @@ import { useRouter } from "next/router";
 import React from "react";
 import { useState, useEffect } from "react";
 
-import { useAccentContext } from "../context/accentColor";
-
 import SocialMedia from "./SocialMedia";
 
 function Header({ location, nav, lang }) {
     const [menuState, setMenuState] = useState("_closed");
     const [navBackground, setNavBackground] = useState("_transparent");
-    const [accent, setAccent] = useAccentContext();
     const { asPath } = useRouter();
-
-    // set accent color to randomly generated vaklue from context
-    useEffect(() => {
-        document.documentElement.style.setProperty("--accent-01", accent);
-    }, []);
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
