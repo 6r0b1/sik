@@ -78,6 +78,7 @@ export async function getStaticProps({ locale }) {
       locale: require(`../../locales/${locale}.json`),
       works: works,
       contentful: await getWorks(),
+      revalidate: 10,
     },
   };
 }
