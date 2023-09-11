@@ -7,9 +7,12 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
-export const getWorks = async () => {
+export const getWorks = async (locale = "de-DE") => {
   try {
-    const entries = await client.getEntries({ content_type: "work" });
+    const entries = await client.getEntries({
+      content_type: "work",
+      locale,
+    });
     console.log(entries);
     return entries.items;
   } catch (error) {

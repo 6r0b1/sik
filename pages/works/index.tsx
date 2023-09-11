@@ -43,7 +43,7 @@ export default function Works({ locale, works, contentful }) {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getServerSideProps({ locale }) {
   const works: IWork[] = [
     {
       id: 1,
@@ -73,12 +73,14 @@ export async function getStaticProps({ locale }) {
         "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
     },
   ];
+
   return {
     props: {
       locale: require(`../../locales/${locale}.json`),
       works: works,
-      contentful: await getWorks(),
-      revalidate: 10,
+      contentful: await getWorks(locale === "de_DE" ? "de-DE" : "en-GB"),
     },
   };
 }
+
+// export async function getStaticPaths() {}
