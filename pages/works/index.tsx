@@ -8,7 +8,9 @@ import Footer from "../../components/Footer";
 import { IWork } from "@/types/interfaces";
 import { getWorks } from "@/lib/contentful/contentfulCdaClient";
 
-export default function Works({ locale, works }) {
+export default function Works({ locale, works, contentful }) {
+  console.log(contentful);
+
   return (
     <>
       <Head>
@@ -41,8 +43,7 @@ export default function Works({ locale, works }) {
   );
 }
 
-export function getStaticProps({ locale }) {
-  getWorks();
+export async function getStaticProps({ locale }) {
   const works: IWork[] = [
     {
       id: 1,
@@ -76,6 +77,7 @@ export function getStaticProps({ locale }) {
     props: {
       locale: require(`../../locales/${locale}.json`),
       works: works,
+      contentful: await getWorks(),
     },
   };
 }
