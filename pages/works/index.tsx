@@ -6,6 +6,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import { IWork } from "@/types/interfaces";
+import { getWorks } from "@/lib/contentful/contentfulCdaClient";
 
 export default function Works({ locale, works }) {
   return (
@@ -41,6 +42,7 @@ export default function Works({ locale, works }) {
 }
 
 export function getStaticProps({ locale }) {
+  getWorks();
   const works: IWork[] = [
     {
       id: 1,
