@@ -38,7 +38,7 @@ export default function About({ locale, images }) {
         <div className="spacer_100"></div>
         <div className="main_image_container">
           <Image
-            src="https://images.ctfassets.net/mshhad93s6eh/2907AJ3LjXkpmI4mM6wY8c/d2a2dafcd3111590ba0a7789bfed5d41/hmr_10.jpg"
+            src="/statics/about_main.jpg"
             alt=""
             fill
             style={{
