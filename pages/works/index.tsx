@@ -8,9 +8,7 @@ import Footer from "../../components/Footer";
 import { IWork } from "@/types/interfaces";
 import { getWorks } from "@/lib/contentful/contentfulCdaClient";
 
-export default function Works({ locale, works, contentful }) {
-  console.log(contentful);
-
+export default function Works({ locale, works }) {
   return (
     <>
       <Head>
@@ -78,7 +76,7 @@ export async function getServerSideProps({ locale }) {
     props: {
       locale: require(`../../locales/${locale}.json`),
       works: works,
-      contentful: await getWorks(locale === "de_DE" ? "de-DE" : "en-GB"),
+      // contentful: await getWorks(locale === "de_DE" ? "de-DE" : "en-GB"),
     },
   };
 }
