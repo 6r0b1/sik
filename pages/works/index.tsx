@@ -76,6 +76,7 @@ export async function getServerSideProps({ locale }) {
     props: {
       locale: require(`../../locales/${locale}.json`),
       works: works,
+      // hi contentful
       // contentful: await getWorks(locale === "de_DE" ? "de-DE" : "en-GB"),
     },
   };
