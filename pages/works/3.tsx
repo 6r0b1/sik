@@ -163,7 +163,7 @@ export function getServerSideProps({ locale }) {
   const works: IWork[] = [
     {
       id: 1,
-      title_de: "untitled (2021)",
+      title_de: "ohne Titel (2021)",
       description_de:
         "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
       description_long_de: [
@@ -171,7 +171,7 @@ export function getServerSideProps({ locale }) {
         "Es ging bei der Residenz darum, in den Schul-Räumen Störungen zu erforschen. Dazu hat should-I-know spiegelndes Material benutzt und in der 1. Etage von der Schule eine Nische mit Rettungsfolie ausgekleidet. In der 2. Etage wurden die Glas-Türen mit Spiegel-Karton bestückt. Die Aktionen hatten keinen Titel, aber alle, die mit der Schule zu tun haben, konnten sich eigene Namen dafür ausdenken.",
         "Es ist herausgekommen, dass sich der gewohnte Weg der Menschen in der Schule durch die „spiegelnden Störungen“ im Schul-Gebäude verändert. Die Körper springen, drehen und tanzen im Raum. Sie reflektieren mit der Spiegelung und man sieht sich selbst und andere neu.",
       ],
-      title_en: "ohne Titel (2021)",
+      title_en: "untitled (2021)",
       description_en:
         "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
       description_long_en: [
