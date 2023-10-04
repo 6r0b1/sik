@@ -68,7 +68,7 @@ export async function getServerSideProps({ locale }) {
         "should-I-know hatte eine Residenz in der Herderschule in Kooperation mit dem Mousonturm in Frankfurt am Main. Im Mittelpunkt standen spiegelnde Flächen in der Schule und die Reaktionen der Körper darauf.",
       title_en: "untitled (2021)",
       description_en:
-        "should-I-know had a residency at the Herderschule in cooperation with the Mousonturm in Frankfurt am Main.The focus was on reflective surfaces in the school and the bodies' reactions to them.",
+        "should-I-know had a residency at the Herderschule in cooperation with the Mousonturm in Frankfurt am Main. The focus was on reflective surfaces in the school and the bodies' reactions to them.",
     },
   ];
 
