@@ -12,9 +12,18 @@ import LightBox from "../../components/LightBox";
 import { IWork } from "@/types/interfaces";
 
 export default function Work({ locale, work }) {
+  console.log("work", work);
+
   const [modalState, setModalState] = useState("_hidden");
   const [selectedImage, setSelectedImage] = useState(0);
-
+  const linkData = work.links.map((link, index) => ({
+    href: link,
+    linkText: work.linkDescriptions[index],
+  }));
+  const creditsData = work.roles.map((credit, index) => ({
+    role: credit,
+    name: work.people[index],
+  }));
   function openModal(index) {
     setSelectedImage(index);
     setModalState("_shown");
@@ -22,6 +31,7 @@ export default function Work({ locale, work }) {
   function closeModal() {
     setModalState("_hidden");
   }
+
   return (
     <>
       <Head>
@@ -31,7 +41,7 @@ export default function Work({ locale, work }) {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header
-        location={locale.work.details}
+        location={locale.works.details}
         nav={locale.nav}
         lang={locale.lang}
       />
@@ -39,8 +49,12 @@ export default function Work({ locale, work }) {
         <div className="spacer_100"></div>
         <div className="main_image_container">
           <Image
-            src={`${work[0].main_img_src}`}
-            alt=""
+            src={`https:${work.mainImage.fields.file.url}`}
+            alt={
+              work.mainImage.fields.description
+                ? work.mainImage.fields.description
+                : ""
+            }
             fill
             style={{
               objectFit: "cover",
@@ -48,68 +62,61 @@ export default function Work({ locale, work }) {
           />
         </div>
         <div className="spacer_100"></div>
-        <div className="work_main">
+        <div className="works_main">
           <div className="work_details">
-            <h2>{work[0][`title${locale.lang}`]}</h2>
-            {work[0][`description_long${locale.lang}`] ? (
-              work[0][`description_long${locale.lang}`].map(
-                (paragraph, index) => <p key={index}>{paragraph}</p>
-              )
-            ) : (
-              <p>{work[0][`description${locale.lang}`]}</p>
-            )}
-            {work[0].links && (
+            <h2>{work.title}</h2>
+            {work.longDescription.content.map((paragraph, index) => (
+              <p key={index}>{paragraph.content[0].value}</p>
+            ))}
+            {work.links && (
               <div className="work_details">
-                <h2>{locale.work.links}</h2>
-                {work[0].links.map((link, index) => (
+                <h2>{locale.works.links}</h2>
+                {linkData.map((link, index) => (
                   <div key={index} className="link_container">
                     <p className="indicator">{"->"}</p>
 
-                    {link.link !== "" ? (
-                      <a href={link.link} target="_blank" rel="noreferrer">
-                        <p>{link[`link_text${locale.lang}`]}</p>
-                      </a>
-                    ) : (
-                      <p>{link[`link_text${locale.lang}`]}</p>
-                    )}
+                    <a href={link.href} target="_blank" rel="noreferrer">
+                      <p>{link.linkText}</p>
+                    </a>
                   </div>
                 ))}
               </div>
             )}
           </div>
-          {work[0].dates && (
+          {work.dates && (
             <div className="work_dates">
               <h2>Dates</h2>
-              {work[0].dates.map((date, index) => (
-                <p key={index}>
-                  {date.date} | {date.time}
-                  <br />
-                  {date.venue}
-                </p>
+              {work.dates.map((date, index) => (
+                <p key={index}>{date}</p>
               ))}
             </div>
           )}
         </div>
         <div className="spacer_100"></div>
         <div className="image_grid">
-          {work[0].images &&
-            work[0].images.map((image, index) => (
-              <div className="grid_item" key={index}>
-                <div
-                  className="grid_shader"
-                  onClick={() => openModal(index)}
-                ></div>
-                <Image
-                  className="grid_image"
-                  src={image.src}
-                  alt={image[`alt${locale.lang}`]}
-                  fill
-                  style={{
-                    objectFit: "cover",
-                  }}
-                />
-              </div>
-            ))}
+          {work.images &&
+            work.images.map(
+              (image, index) => (
+                console.log("image", image),
+                (
+                  <div className="grid_item" key={index}>
+                    <div
+                      className="grid_shader"
+                      onClick={() => openModal(index)}
+                    ></div>
+                    <Image
+                      className="grid_image"
+                      src={`https:${image.fields.file.url}`}
+                      alt={image.fields.description}
+                      fill
+                      style={{
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                )
+              )
+            )}
         </div>
         <div className={`modal_bg${modalState}`}>
           {modalState === "_shown" && (
@@ -123,7 +130,7 @@ export default function Work({ locale, work }) {
                 height={35}
               />
               <LightBox
-                images={work[0].images}
+                images={work.images}
                 selectedIndex={selectedImage}
                 locale={locale}
               />
@@ -132,20 +139,16 @@ export default function Work({ locale, work }) {
         </div>
 
         <div className="spacer_100"></div>
-        {work[0].credits && (
+        {work.roles && (
           <div className="credits_wrapper">
             <div className="credits">
               <h2>Credits</h2>
               <div className="credits_list">
-                {work[0].credits.map((credit, index) => (
+                {creditsData.map((credit, index) => (
                   <>
                     <div key={index} className="credits_list_item">
-                      <p className="credit_name">
-                        {credit[`role${locale.lang}`]}:
-                      </p>
-                      <p className="credit_person">
-                        {credit[`name${locale.lang}`]}
-                      </p>
+                      <p className="credit_name">{credit.role}</p>
+                      <p className="credit_person">{credit.name}</p>
                     </div>
                     <div className="line"></div>
                   </>
@@ -329,6 +332,7 @@ export async function getServerSideProps({ locale, params }) {
       notFound: true,
     };
   }
+
   return {
     props: {
       locale: require(`../../locales/${locale}.json`),
