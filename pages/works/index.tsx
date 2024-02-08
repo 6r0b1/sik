@@ -7,8 +7,12 @@ import Footer from "../../components/Footer";
 
 import { IWork } from "@/types/interfaces";
 import { getWorks } from "@/lib/contentful/contentfulCdaClient";
+import { InferGetServerSidePropsType } from "next";
 
-export default function Works({ locale, works }) {
+export default function Works({
+  locale,
+  works,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return (
     <>
       <Head>
@@ -25,12 +29,12 @@ export default function Works({ locale, works }) {
       <main>
         <div className="spacer_50_percent"></div>
         <div className="works_list">
-          {works.map((work) => (
+          {works?.map((work) => (
             <div className="work_entry" key={work.id}>
               <Link className="work_link" href={`/works/${work.id}`}>
-                {work[`title${locale.lang}`]}
+                {work.title}
               </Link>
-              <p>{work[`description${locale.lang}`]}</p>
+              <p>{work.shortDescription}</p>
             </div>
           ))}
         </div>
@@ -75,9 +79,8 @@ export async function getServerSideProps({ locale }) {
   return {
     props: {
       locale: require(`../../locales/${locale}.json`),
-      works: works,
-      // hi contentful
-      // contentful: await getWorks(locale === "de_DE" ? "de-DE" : "en-GB"),
+      // works: works,
+      works: await getWorks(locale === "de_DE" ? "de-DE" : "en-GB"),
     },
   };
 }
