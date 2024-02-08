@@ -32,9 +32,8 @@ export const getWorks = async (locale) => {
 export const getWorkById = async (id, locale = "de-DE") => {
   try {
     const entry = await client.getEntry(id, { locale });
-    console.log(entry);
-
-    return entry;
+    const res = entry.fields;
+    return res;
   } catch (error) {
     console.error("Error getting entry:", error);
   }
