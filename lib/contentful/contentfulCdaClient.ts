@@ -7,6 +7,12 @@ const client = contentful.createClient({
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
+const previewClient = contentful.createClient({
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_PREVIEW_TOKEN,
+  host: "preview.contentful.com",
+});
+
 export const getWorks = async (locale) => {
   console.log("locale", locale);
 
@@ -29,9 +35,19 @@ export const getWorks = async (locale) => {
   }
 };
 
-export const getWorkById = async (id, locale = "de-DE") => {
+export const getWorkById = async (id, locale) => {
   try {
     const entry = await client.getEntry(id, { locale });
+    const res = entry.fields;
+    return res;
+  } catch (error) {
+    console.error("Error getting entry:", error);
+  }
+};
+
+export const getPreviewWorkById = async (id, locale) => {
+  try {
+    const entry = await previewClient.getEntry(id, { locale });
     const res = entry.fields;
     return res;
   } catch (error) {

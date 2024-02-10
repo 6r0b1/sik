@@ -3,13 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { useState } from "react";
-import { getWorkById } from "@/lib/contentful/contentfulCdaClient";
+import { getPreviewWorkById } from "@/lib/contentful/contentfulCdaClient";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import LightBox from "../../components/LightBox";
-
-import { IWork } from "@/types/interfaces";
 
 export default function Work({ locale, work }) {
   const [modalState, setModalState] = useState("_hidden");
@@ -163,7 +161,7 @@ export default function Work({ locale, work }) {
 }
 
 export async function getServerSideProps({ locale, params }) {
-  const work = await getWorkById(
+  const work = await getPreviewWorkById(
     params.id,
     locale === "de_DE" ? "de-DE" : "en-GB"
   );
